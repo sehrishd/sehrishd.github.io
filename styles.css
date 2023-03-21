@@ -12,15 +12,12 @@ body {
 }
 
 .navbar{
-    width: 85%;
-    margin: auto;
     padding: 38px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.right-side {
+.left-side {
     display: flex;
 }
 

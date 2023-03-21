@@ -9,26 +9,23 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(images/Jellyfish.jpeg);
 }
 
 .navbar{
     width: 85%;
     margin: auto;
-    padding: 35px 0;
+    padding: 38px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.HomePage{
-    color: bisque;
-    text-decoration: none;
-    transition: color 0.5s;
+.left-side {
+    display: flex;
 }
 
-.AboutPage{
-    color: bisque;
-    text-decoration: none;
-    transition: color 0.5s;
+.navbar > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }

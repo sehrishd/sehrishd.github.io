@@ -21,3 +21,9 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.HomePage{
+    color: bisque;
+    text-decoration: none;
+    transition: color 0.5s;
+}

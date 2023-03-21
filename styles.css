@@ -10,6 +10,7 @@
     background-image: -moz-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75),url(images/Jellyfish.jpeg));
     background-size: cover;
     background-position: center;
+    background-image: url(images/Jellyfish.jpeg);
 }
 
 .navbar{

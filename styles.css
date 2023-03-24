@@ -1,42 +1,106 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
-}
-
-.banner{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 100px;
-    background: pink;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
+    font-family: sans-serif;
 }
 
 .navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    padding: 20px 100px;
-    background: pink;
+    height: 150vh;
+    background: rgb(255, 230, 241);
+}
+
+nav{
     display: flex;
-    justify-content: space-between;
+    width: 94%;
+    margin: auto;
+    padding: 20px 0;
     align-items: center;
-    z-index: 99;
+    justify-content: space-between;
 }
 
-.left-side {
-    display: flex;
+nav header{
+    font-size: larger;
+    font-family: sans-serif;
 }
 
-.navbar > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:aliceblue;
+
+}
+
+.details{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.details h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(238, 81, 183);
+}
+
+.details p{
+    color: black;
+    line-height: 22px;
+}
+
+.details a{
+    background: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: pink;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    top: 3px;
+    
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .headshot{
+    left: 45%;
+}
+
+.logo{
+    size: 50%;
 }

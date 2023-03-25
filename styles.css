@@ -107,7 +107,7 @@ span{
 
 /* About Page Styles */
 
-.two-columns{
+.content-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

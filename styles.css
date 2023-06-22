@@ -107,6 +107,12 @@ span{
 
 /* About Page Styles */
 
+.navbar2{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+
 body {
     background: url('./Images/background3\ copy.png');
     background-size: cover;
@@ -116,29 +122,29 @@ body {
 .title h1 {
     color:burlywood;
     font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 8px;
+    font-weight: 500;
+    letter-spacing: 6.5px;
     margin-bottom: 2rem;
     text-align: center;
 }
 
 .title h2 {
     color: #777;
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 300;
     text-align: center;
 }
 
 .profile {
-    margin-top: 6.5rem;
+    margin-top: 8rem;
     margin-bottom: 5rem;
     text-align: center;
 }
 
 .message {
-    font-size: 2rem;
+    font-size: 0.5rem;
     color:darkolivegreen;
-    line-height: 5rem;
+    line-height: 3rem;
     margin-bottom: 5rem;
     text-align: center;
 }

@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: papayawhip;
+}
+
 .navbar{
     position: relative;
     width: 100%;
@@ -36,7 +40,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:darkolivegreen;
+    color:#DE7E5D;
 
 }
 
@@ -60,7 +64,8 @@ nav ul li a:hover{
 }
 
 span{
-    color:darkorchid;
+    color:#DE7E5D;
+    font-weight: bold;
 }
 
 .details a {
@@ -88,9 +93,9 @@ span{
 
 .container {
     top: 280px;
-    height: 600px;
+    height: 900px;
     position:relative;
-    background-color: lavender;
+    background-color: papayawhip;
     margin-top: none;
 }
 
@@ -98,6 +103,7 @@ span{
     transform: translateY(200px);
     font-size: 50px;
     margin-left: 5rem;
+    color:#DE7E5D;
 }
 
 .novoloom p {
@@ -107,7 +113,7 @@ span{
     margin-top: 2rem;
     margin-left: 5rem;
     line-height: 155%;
-    color: darkolivegreen;
+    color:black;
 }
 
 .novoloom a {
@@ -115,11 +121,24 @@ span{
     margin-left: 5rem;
 }
 
+.novoloom h4 {
+    transform: translateX(800px);
+    transform: translateY(-360px);
+    margin-left: 35rem;
+}
+
+.mainPic {
+    transform: translateX(1600px);
+    transform: translateY(-250px);
+    margin-left: 35rem;
+    margin-right: 10rem;
+    margin-top: -4rem;
+}
 
 /* About Page Styles */
 
 .aboutBody {
-    background-color: lavender;
+    background-color: papayawhip;
     background-size: cover;
     max-height: fill;
 }
@@ -130,8 +149,9 @@ span{
     margin-bottom: 5rem;
     text-align:left;
 }
+
 .message h1 {
-    color: black;
+    color:#DE7E5D;
     font-size: 3rem;
     font-weight: 500;
     letter-spacing: 2px;
@@ -140,7 +160,7 @@ span{
 
 .message {
     font-size: 2rem;
-    color:darkolivegreen;
+    color:black;
     line-height: 50px;
     margin-bottom: 2rem;
     margin-top: 0rem;
@@ -153,7 +173,7 @@ span{
 
 .workTogether p {
     font-size: 2rem;
-    color:darkolivegreen;
+    color:#DE7E5D;
     margin-top: -40rem;
     text-align: center;
     transform: translateX(10%);
@@ -166,7 +186,7 @@ span{
     background: #f6f6f6;
     font-size: 2rem;
     text-decoration: none;
-    color:darkolivegreen;
+    color:#DE7E5D;
     border-radius: 1px;
     transition: background 0.5s;
     text-align: center;
@@ -178,4 +198,37 @@ span{
 .btn:hover {
     background: #dadada;
     text-align: center;
+}
+
+/* Novoloom Page Styles */
+
+.mosaicLogo {
+    margin-top: 0;
+    margin-left: 18rem;
+    background-size: cover;
+}
+
+.projectOverview {
+    background-color: peachpuff;
+    margin-top: none;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 15%;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.projectOverview h2 {
+    padding-top: 10%;
+    font-size: 35px;
+}
+
+.projectOverview p {
+    padding-left: 40%;
+    line-height: 30px;
+    padding-top: none;
+    margin-top: none;
+    margin-right: 10rem;
+    transform: translateY(-30px);
+    font-size: 20px;
 }

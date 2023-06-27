@@ -292,9 +292,20 @@ span{
 
 .canvasLogo {
     margin-top: 8rem;
-    margin-left: 18rem;
+    margin-left: 35%;
     padding-bottom: 12%;
-    background-size: cover;
+}
+
+.backgroundColor {
+    background-color:#7851a9;
+}
+
+.backgroundColor nav {
+    color: white;
+}
+
+.backgroundColor ul li a {
+    color: white;
 }
 
 .INFOprojectSummary h1 {

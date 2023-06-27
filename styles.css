@@ -377,6 +377,19 @@ span{
     padding-bottom: 5%;
 }
 
+.mainContentINFO p {
+    font-size: 20px;
+}
+
+.mainContentINFO h3 {
+    font-size: 25px;
+}
+
+.mainContentINFO span {
+    font-weight: bold;
+    color: #DE7E5D;
+}
+
 .research h2 {
     font-size: 32px;
     padding-top: 5%;
@@ -433,7 +446,6 @@ span{
 
 .productFeatures ul {
     padding-left: 3%;
-    padding-top: 3%;
     padding-bottom: 5%;
 }
 

@@ -99,14 +99,14 @@ span{
     margin-top: none;
 }
 
-.novoloom h1 {
+.workExperience h1 {
     transform: translateY(200px);
     font-size: 50px;
     margin-left: 5rem;
-    color:#DE7E5D;
+    color:black;
 }
 
-.novoloom p {
+.workExperience p {
     transform: translateY(200px);
     font-size: 20px;
     text-align: left;
@@ -116,12 +116,12 @@ span{
     color:black;
 }
 
-.novoloom a {
+.workExperience a {
     transform: translateY(200px);
     margin-left: 5rem;
 }
 
-.novoloom h4 {
+.workExperience h4 {
     transform: translateX(800px);
     transform: translateY(-360px);
     margin-left: 35rem;
@@ -133,6 +133,18 @@ span{
     margin-left: 35rem;
     margin-right: 10rem;
     margin-top: -4rem;
+}
+
+.INFOproject {
+    transform: translateY(-320px);
+}
+
+.INFOproject img {
+    margin-top: 9%;
+}
+
+.INFOproject h4 {
+    transform: translateY(-230px);
 }
 
 /* About Page Styles */
@@ -182,8 +194,10 @@ span{
 
 .btn {
     display: inline-block;
-    padding: 2rem 2rem;
-    background: #f6f6f6;
+    padding: 14px 28px;
+    background-color: white;
+    border: 2px solid black;
+    border-color: #DE7E5D;
     font-size: 1.5rem;
     text-decoration: none;
     color:#DE7E5D;
@@ -191,12 +205,11 @@ span{
     transition: background 0.5s;
     text-align: center;
     margin-top: 3rem;
-    /*transform: translateY(900%);
-    transform: translateX(50%);*/
 }
 
 .btn:hover {
-    background: #dadada;
+    background-color:#DE7E5D;
+    color:#f6f6f6;
     text-align: center;
 }
 
@@ -263,7 +276,8 @@ span{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-left: 5%;
-    padding-top: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     row-gap: 40px;
     background-color: peachpuff;
 }
@@ -272,4 +286,186 @@ span{
     position: relative;
     height: 350px;
     width: 100%;
+}
+
+/* INFOproject Page Styles */
+
+.canvasLogo {
+    margin-top: 8rem;
+    margin-left: 18rem;
+    padding-bottom: 12%;
+    background-size: cover;
+}
+
+.INFOprojectSummary h1 {
+    padding-left: 10%;
+    transform: translateY(290px);
+    font-size: 35px;
+}
+
+.INFOprojectSummary p {
+    padding-left: 10%;
+    padding-top: 5%;
+    transform: translateY(-400px);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.INFOprojectSummary img {
+    margin-left: 650px;
+    padding-top: 10%;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: none;
+    padding-bottom: 5%;
+    margin-right: 5%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 400px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+.element h2 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: none;
+    transform: translateY(-80px);
+}
+
+.element ul {
+    padding-top: 5%;
+    transform: translateY(-80px);
+}
+
+.element ul li {
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.mainContentINFO {
+    padding-left: 10%;
+    line-height: 38px;
+}
+
+.mainContentINFO h1 {
+    font-size: 55px;
+    padding-bottom: 5%;
+}
+
+.research h2 {
+    font-size: 32px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.research p {
+    padding-bottom: 5%;
+}
+
+.research a {
+    transform: translateY(-50px);
+}
+
+.research video {
+    transform: translateY(-400px);
+    margin-left: 660px;
+    padding-bottom: none;
+    margin-bottom: none;
+}
+
+.surveys {
+    margin-right: 60%;
+}
+
+.interviews {
+    transform: translateY(-300px);
+    margin-right: 10%;
+}
+
+.interviews p {
+    transform: translateY(-20px);
+}
+
+.personas {
+    transform: translateY(-300px);
+    margin-right: 60%;
+}
+
+.personas p {
+    transform: translateY(-20px);
+    padding-top: 4%;
+}
+
+.mypersona {
+    margin-left: 120%;
+    transform: translateY(-300px);
+}
+
+.design {
+    transform: translateY(-680px);
+    padding-right: 10%;
+}
+
+.productFeatures ul {
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.productFeatures h3 {
+    padding-bottom: 2%;
+}
+
+.productFeatures p {
+    padding-bottom: 5%;
+}
+
+.designPics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    transform: translateY(-300px);
+    margin-left: 25%;
+    margin-right: 10%;
+}
+
+.wireframes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding-top: 5%;
+}
+
+.annotatedWireframing p {
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 22px;
+}
+
+.prototype h1 {
+    transform: translateY(200px);
+}
+
+.prototype video {
+    transform: translateY(200px);
+}
+
+.prototype a {
+    transform: translateY(200px);
+    margin-left: 38%;
 }

@@ -13,7 +13,7 @@ body {
     width: 100%;
 }
 
-nav{
+nav {
     display: flex;
     width: 94%;
     margin: auto;
@@ -195,13 +195,13 @@ span{
 .btn {
     display: inline-block;
     padding: 14px 28px;
-    background-color: white;
+    background-color: papayawhip;
     border: 2px solid black;
     border-color: #DE7E5D;
     font-size: 1.5rem;
     text-decoration: none;
     color:#DE7E5D;
-    border-radius: 1px;
+    border-radius: 5px;
     transition: background 0.5s;
     text-align: center;
     margin-top: 3rem;
@@ -296,13 +296,16 @@ span{
     transform: translateY(-64px);
 }
 
-.backgroundColor {
-    background-color:#7851a9;
+.backgroundColor {border-radius: 5px;
     background-color: #C3B1E1;
 }
 
 .backgroundColor nav {
     color: white;
+}
+
+.backgroundColor ul li a:hover {
+    color: #FFD700;
 }
 
 .backgroundColor ul li a {
@@ -437,7 +440,7 @@ span{
 
 .mypersona {
     margin-left: 120%;
-    transform: translateY(-300px);
+    transform: translateY(-350px);
 }
 
 .design {
@@ -491,5 +494,5 @@ span{
 
 .prototype a {
     transform: translateY(200px);
-    margin-left: 38%;
+    margin-left: 40%;
 }

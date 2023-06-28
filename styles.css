@@ -292,12 +292,13 @@ span{
 
 .canvasLogo {
     margin-top: 8rem;
-    margin-left: 35%;
-    padding-bottom: 12%;
+    margin-left: 32%;
+    transform: translateY(-64px);
 }
 
 .backgroundColor {
     background-color:#7851a9;
+    background-color: #C3B1E1;
 }
 
 .backgroundColor nav {

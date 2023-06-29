@@ -476,6 +476,17 @@ span{
     column-gap: 20px;
     padding-top: 5%;
 }
+.imgs {
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.imgs:hover {
+    transform: scale(1.8);
+    margin-right: 10%;
+}
 
 .annotatedWireframing p {
     padding-top: 5%;

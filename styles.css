@@ -1,16 +1,22 @@
 *{
     margin: 0px;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 body {
-    background-color: papayawhip;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.navbar{
-    position: relative;
+.navbar {
+    background-color: transparent;
     width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 nav {
@@ -37,19 +43,21 @@ nav ul li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: color 0.4s;
 }
 
 nav ul li a:hover{
-    color:#DE7E5D;
+    color:rgb(53, 92, 68);
+    text-decoration: underline;
 
 }
 
 .details{
-    margin-left: 8%;
-    margin-top: 13%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
     animation: fadeIn 3s;
     animation-fill-mode: forwards;
-    text-align: center;
 }
 
 @keyframes fadeIn {
@@ -58,13 +66,13 @@ nav ul li a:hover{
 } 
 
 .details h1{
-    font-size: 80px;
+    font-size: 100px;
     color: black;
-    margin-bottom: 20px;
+    padding-top: 60px;
 }
 
 span{
-    color:#DE7E5D;
+    color: rgb(53, 92, 68);
     font-weight: bold;
 }
 
@@ -77,130 +85,71 @@ span{
     margin: 30px 0;
 }
 
-.backgroundpic {
-    background-image: url('./Images/homepic3.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    position: absolute;
-    margin-bottom: 0px;
-    height: 100%;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    opacity: 40%;
+.picture-container {
+    display: grid;
+    place-items: center;
 }
 
-.container {
-    top: 280px;
-    height: 900px;
-    position:relative;
-    background-color: papayawhip;
-    margin-top: none;
+.picture-content {
+    width: 800px;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.workExperience h1 {
-    transform: translateY(200px);
-    font-size: 50px;
-    margin-left: 5rem;
-    color:black;
+.picture-content h3 {
+    line-height: 28px;
 }
 
-.workExperience p {
-    transform: translateY(200px);
-    font-size: 20px;
-    text-align: left;
-    margin-top: 2rem;
-    margin-left: 5rem;
-    line-height: 155%;
-    color:black;
+.picture-content a {
+    color: black;
+    text-decoration: none;
+    padding-top: 8%;
+    justify-self: right;
+    transform: translateX(99%);
 }
 
-.workExperience a {
-    transform: translateY(200px);
-    margin-left: 5rem;
+.picture-content a:hover {
+    text-decoration: underline;
 }
 
-.workExperience h4 {
-    transform: translateX(800px);
-    transform: translateY(-360px);
-    margin-left: 35rem;
-}
 
-.mainPic {
-    transform: translateX(1600px);
-    transform: translateY(-250px);
-    margin-left: 35rem;
-    margin-right: 10rem;
-    margin-top: -4rem;
-}
+/* About Me Page Styles */
 
-.INFOproject {
-    transform: translateY(-320px);
-}
-
-.INFOproject img {
-    margin-top: 9%;
-}
-
-.INFOproject h4 {
-    transform: translateY(-230px);
-}
-
-/* About Page Styles */
-
-.aboutBody {
-    background-color: papayawhip;
-    background-size: cover;
-    max-height: fill;
-}
-
-.profile {
-    margin-top: 4rem;
-    margin-left: 8rem;
-    margin-bottom: 5rem;
-    text-align:left;
-}
-
-.message h1 {
-    color:#DE7E5D;
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-}
-
-.message {
-    font-size: 2rem;
-    color:black;
-    line-height: 50px;
-    margin-bottom: 2rem;
-    margin-top: 0rem;
-    margin-left: 46rem;
-    text-align: left;
-    position: relative;
-    top: -500px;
-    right: 10px; 
-}
-
-.workTogether p {
-    font-size: 2rem;
-    color:#DE7E5D;
-    margin-top: -40rem;
+.wrapper {
     text-align: center;
-    transform: translateX(10%);
-    transform: translateY(700%);
+    width: 100%;
+    min-height: 100vh;
+    background-color: #cee2cd;
+    padding: 90px 0;
 }
+
+.testimonial h1 {
+    font-weight: 700;
+    padding-bottom: 35px;
+    font-size: 40px;
+}
+
+.testimonial blockquote {
+    padding-top: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/* button styles */
 
 .btn {
     display: inline-block;
     padding: 14px 28px;
-    background-color: papayawhip;
+    background-color: white;
     border: 2px solid black;
-    border-color: #DE7E5D;
+    border-color: #5b7468;
     font-size: 1.5rem;
     text-decoration: none;
-    color:#DE7E5D;
+    color:#000000;
     border-radius: 5px;
     transition: background 0.5s;
     text-align: center;
@@ -208,7 +157,8 @@ span{
 }
 
 .btn:hover {
-    background-color:#DE7E5D;
+    border-color: #5b7468;
+    background-color:#5b7468;
     color:#f6f6f6;
     text-align: center;
 }
@@ -216,31 +166,29 @@ span{
 /* Novoloom Page Styles */
 
 .mosaicLogo {
-    margin-top: 0;
-    margin-left: 18rem;
-    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.mosaicLogo img {
+    height: auto;
+    max-width: 100%;
 }
 
 .projectOverview {
-    background-color: peachpuff;
-    margin-top: none;
-    margin-bottom: 5px;
+    background-color: #cee2cd;
     text-align: left;
     padding-left: 15%;
-    padding-bottom: 60px;
-    padding-top: 60px;
 }
 
 .projectOverview h2 {
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 35px;
 }
 
 .projectOverview p {
     padding-left: 40%;
     line-height: 30px;
-    padding-top: none;
-    margin-top: none;
     margin-right: 10rem;
     transform: translateY(-30px);
     font-size: 20px;
@@ -248,9 +196,8 @@ span{
 
 .mainContent h2 {
     font-size: 35px;
-    margin-bottom: 5px;
     text-align: left;
-    padding-left: 15%;
+    margin-left: 15%;
     padding-bottom: 60px;
     padding-top: 90px;
 }
@@ -258,13 +205,10 @@ span{
 .mainContent p {
     padding-left: 40%;
     line-height: 30px;
-    padding-top: none;
-    margin-top: none;
     margin-right: 8rem;
     margin-left: 100px;
     transform: translateY(-100px);
     font-size: 20px;
-    padding-bottom: none;
 }
 
 .mainContent a {
@@ -274,42 +218,29 @@ span{
 
 .pamphlet-allItems-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
     row-gap: 40px;
-    background-color: peachpuff;
+    background-color: #cee2cd;
 }
 
 .pamphlet-item-wrapper {
     position: relative;
-    height: 350px;
     width: 100%;
 }
 
 /* INFOproject Page Styles */
 
 .canvasLogo {
-    margin-top: 8rem;
-    margin-left: 32%;
-    transform: translateY(-64px);
+    display: grid;
+    place-content: center;
 }
 
 .backgroundColor {border-radius: 5px;
-    background-color: #C3B1E1;
-}
-
-.backgroundColor nav {
-    color: white;
-}
-
-.backgroundColor ul li a:hover {
-    color: #FFD700;
-}
-
-.backgroundColor ul li a {
-    color: white;
+    /* background-color: #C3B1E1; */
+    background-color: #a288cc;
 }
 
 .INFOprojectSummary h1 {

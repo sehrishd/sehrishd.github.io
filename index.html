@@ -6,23 +6,23 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <!-- FONT: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
 
     <body>
-        <div class="backgroundpic">
+        <div class="navbar">
             <nav>
-                <!-- <img src="./Images/homepic3.jpeg"> -->
+                <header>Sehrish Daud</header>
+                <ul>
+                    <li><a href="index.html">WORK</a></li>
+                    <li><a href="aboutMe.html">ABOUT</a></li>
+                </ul>
             </nav>
         </div>
-            <div class="navbar">
-                <nav>
-                    <header>Sehrish Daud</header>
-                    <ul>
-                        <li><a href="index.html">WORK</a></li>
-                        <li><a href="aboutMe.html">ABOUT</a></li>
-                    </ul>
-                </nav>
-            </div>
 
         <div class="details">
             <h1>Hi, I'm Sehrish <span>Daud</span></h1>
@@ -31,43 +31,55 @@
             <a href="mailto:daudsehrish@gmail.com">Email</a>
         </div>
 
-        <div class="container">
-            <div class="workExperience">
-                <div class="novoloom">
-                    <h1>Novoloom</h1>
-                    <p>
-                        A small startup started at the University
-                        <br> of Washington where I worked as a 
-                        <br> usability tester and UI designer.
-                    </p>
-                    <a href="Novoloom.html" class="btn">Learn More</a>
-
-                    <div class="mainPic">
-                        <img src="./Images/NovoloomPic.png" alt="Photograph of Novoloom Setup">
-                    </div>
-                    <h4>Usability Testing + Design</h4>
-                </div>
-
-                <div class="INFOproject">
-                    <h1>Canvas Course</h1>
-                    <p>
-                        A sample Canvas course designed to help  
-                        <br> college students learn the fundamental skills  
-                        <br> needed to be employable after graduation. 
-                    </p>
-                    <a href="INFOproject.html" class="btn">Learn More</a>
-
-                    <div class="mainPic">
-                        <img src="./Images/collegeToCareers.png"
-                        width="800" 
-                        height="570">
-                    </div>
-                    <h4>Usability Design + Prototyping</h4>
-                </div>
+        <div class="picture-container">
+            <img src="./Images/NovoloomPicResized.png">
+            <div class="picture-content">
+                <h2>Novoloom</h2>
+                <h3>A small startup started at the University
+                    of Washington where I worked as a usability 
+                    tester and designer.
+                </h3>
+                <a href="Novoloom.html" class="button">View Project</a>
             </div>
+
+            <img src="./Images/CollegeToCareersResized.png">
+            <div class="picture-content">
+                <h2>Canvas Course</h2>
+                <h3>A sample Canvas course designed to help
+                    college students learn the fundamental 
+                    skills needed to be employable after
+                    graduation.
+                </h3>
+                <a href="INFOproject.html" class="button">View Project</a>
+            </div>
+
+            <img src="./Images/H&Hwebsitepic.png">
+            <div class="picture-content">
+                <h2>Club Campaign Website</h2>
+                <h3>A website created for club use. It displays
+                    information about our campaign, volunteering
+                    opportunities, organizations that we are 
+                    partnered with, and officer contact information.
+                </h3>
+                <a href="https://sehrishd.github.io/HnHuw/" class="button">View Website</a>
+            </div>
+        
         </div>
 
-        
     </body> 
 
 </html>
+
+<script>
+    $(document).ready(function() {
+    var scroll_pos = 0;
+    $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 200) {
+            $("body").css('background-color', '#cee2cd');
+        } else {
+            $("body").css('background-color', 'white');
+        }
+    });
+});
+</script>

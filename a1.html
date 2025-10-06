@@ -4,15 +4,249 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-    <title>Example Student's HCDE 439 Physical Computing Page!</title>
+    <title>Sehrish Daud's A1 Documentation</title>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Example Student's Assignment 1!</h1>
+    <h1>Assignment 1: Blink!</h1>
     <div class="header">
-      <img src="red-panda.jpg" />
       <p>Here is all the documentation for assignment 1!</p>
     </div>
+
+    <!-- Schematic Section -->
+    <section class="documentation-section">
+      <h2>Schematic</h2>
+      <div class="image-container">
+        <img src="A1_schematic.jpg" alt="Circuit Schematic Diagram" class="project-image" />
+        <p class="image-caption">
+          <strong>Schematic Description:</strong> 
+          This schematic shows my circuit layout. 
+          The LEDs are connected to pins 3, 6, and 7 with 220 ohm resistors. 
+          I chose the resistor values of 220 ohms based on the actual calculation which came out to be 
+          160 ohms. To err on the safe side, I chose 220 ohms to ensure the LEDs would not be damaged.
+        </p>
+      </div>
+    </section>
+
+    <!-- Circuit Section -->
+    <section class="documentation-section">
+      <h2>Circuit</h2>
+      <div class="image-container">
+        <img src="A1_circuit_img.jpg" alt="Physical Circuit Setup" class="project-image" />
+        <p class="image-caption">
+          <strong>Circuit Description:</strong> 
+          This photo shows the physical implementation of my circuit on a breadboard. 
+          The Arduino Uno is connected to three LEDs in parallel configuration. 
+        </p>
+      </div>
+    </section>
+
+    <!-- Firmware Section -->
+    <section class="documentation-section">
+      <h2>Firmware</h2>
+      <div class="code-container">
+        <pre><code>// Arduino code for blinking three LEDs independently
+
+          /* For Loop Iteration
+
+            Demonstrates the use of a for() loop.
+            Lights multiple LEDs in sequence, then in reverse.
+
+            The circuit:
+            - LEDs from pins 2 through 7 to ground
+
+            created 2006
+            by David A. Mellis
+            modified 30 Aug 2011
+            by Tom Igoe
+
+            This example code is in the public domain.
+
+            https://docs.arduino.cc/built-in-examples/control-structures/ForLoopIteration/
+          */
+
+          // Sets how long each LED stays on (in milliseconds)
+          int timer = 100;  // Larger value = slower blinking speed
+          
+          // The setup() function runs once when the program starts
+          void setup() {
+            
+            // This for loop set each pin from 2 to 7 as an output pin (the pins I used for my 
+            LEDS were 3, 6, and 7, so they are included in this range)
+            for (int thisPin = 2; thisPin < 8; thisPin++) {
+              // Configure pin as an output (so it can power an LED)
+              pinMode(thisPin, OUTPUT);
+            }
+          }
+
+          // The loop() function runs repeatedly forever
+          void loop() {
+          
+            // The first loop will turn the LEDs on one by one from pin 2 to pin 7
+            for (int thisPin = 2; thisPin < 8; thisPin++) {
+              digitalWrite(thisPin, HIGH);  // this will turn the LED connected to this pin on
+              delay(timer);                 // Wait for 'timer' milliseconds
+              digitalWrite(thisPin, LOW);   // Turn the LED off before moving to the next one
+            }
+          
+            // This second loop will turn the LEDs on one by one from pin 7 back down to pin 2
+            for (int thisPin = 7; thisPin >= 2; thisPin--) {
+              digitalWrite(thisPin, HIGH);  // Turn the LED connected to this pin on
+              delay(timer);                 // Wait for 'timer' milliseconds
+              digitalWrite(thisPin, LOW);   // Turn the LED off before moving to the next one
+            }
+          }
+
+        </code></pre>
+      </div>
+      <div class="code-description">
+        <p>
+          <strong>Code Explanation:</strong> This Arduino program uses for loops to make my LEDs 
+          (connected to pins 2, 6, and 7) blink in sequence. Although I am only using three LEDs, the for loop 
+          still works because it will just skip the pins that are not connected. In the first loop, each LED turns on 
+          and off one by one from left to right. In the second loop, the LEDs light up in the opposite 
+          direction, creating a back-and-forth chasing effect. The variable 'timer' controls how long 
+          each LED stays on, which determines the blinking speed.
+        </p>
+      </div>
+    </section>
+
+    <!-- Circuit Operation Section -->
+    <section class="documentation-section">
+      <h2>Circuit Operation</h2>
+      <div class="image-container">
+        <img src="A1.gif" alt="Animated GIF showing circuit operation" class="project-image operation-gif" />
+        <p class="image-caption">
+          <strong>Operation Description:</strong> 
+          This animated GIF demonstrates the actual operation of the circuit. 
+          You can see three different colored LEDs blinking at different times. Although I used different colored LEDs, 
+          the resistor choice was still the same since they all have the same voltage drop value!
+        </p>
+      </div>
+    </section>
+
+    <!-- Additional Questions Section -->
+    <section class="questions-section">
+      <h2>Additional Questions</h2>
+      
+      <div class="question">
+        <h3>Questions 1, 2, and 4</h3>
+        <div class="image-container">
+          <img src="A1_Additional_questions.jpg" alt="Graph showing voltage across LEDs over time" class="project-image" />
+          <p class="image-caption">
+            <strong>Graph Explanation:</strong> 
+            This graph shows the voltage across each LED over time. The green line represents a green LED, 
+            the red line represents a red LED, and the yellow line represents a yellow LED. Each line shows the 
+            periodic on/off pattern of the circuit by dropping from 5V to 0V.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>Question 5: AI Tools Usage</h3>
+        <p><strong>Answer:</strong> I used AI tools in various ways:</p>
+        <ul>
+          <li>I used Cursor.AI to help me write the code for this website.</li>
+          <li>Cursor.AI generated a template of HTML and CSS to help me style the page & document A1.
+          <li>I did not use any AI tools for the actual building of the circuit.</li>
+          <li>Cursor.AI helped my learning because I was easily able to write HTML due to the code-completion feature.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Styling for better presentation -->
+    <style>
+      .documentation-section {
+        margin: 30px 0;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      
+      .image-container {
+        margin: 20px 0;
+        text-align: center;
+      }
+      
+      .project-image {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .operation-gif {
+        border: 3px solid #4CAF50;
+      }
+      
+      .code-container {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        overflow-x: auto;
+      }
+      
+      .code-container pre {
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      
+      .code-description {
+        margin: 15px 0;
+        padding: 15px;
+        background-color: #e8f4fd;
+        border-left: 4px solid #2196F3;
+        border-radius: 4px;
+      }
+      
+      .questions-section {
+        margin: 40px 0;
+        padding: 25px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        border: 2px solid #e0e0e0;
+      }
+      
+      .question {
+        margin: 25px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        border-left: 4px solid #FF6B6B;
+      }
+      
+      .image-caption {
+        font-style: italic;
+        color: #666;
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      
+      h3 {
+        color: #34495e;
+        margin-top: 0;
+      }
+      
+      ul {
+        margin-left: 20px;
+      }
+      
+      li {
+        margin: 8px 0;
+      }
+    </style>
   </body>
 </html>

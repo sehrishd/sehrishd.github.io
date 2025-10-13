@@ -4,15 +4,269 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-    <title>Example Student's HCDE 439 Physical Computing Page!</title>
+    <title>Sehrish Daud's A2 Documentation</title>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Example Student's Assignment 2!</h1>
+    <h1>Assignment 2: Fade!</h1>
     <div class="header">
-      <img src="red-panda.jpg" />
       <p>Here is all the documentation for assignment 2!</p>
     </div>
+
+    <!-- Schematic Section -->
+    <section class="documentation-section">
+      <h2>Schematic</h2>
+      <div class="image-container">
+        <img src="A2_Fade_Schematic.jpeg" alt="Circuit Schematic Diagram" class="project-image" />
+        <img src="A2_Fade_Resistance_Calculation.jpeg" alt="Circuit Schematic Diagram" class="project-image" />
+        <p class="image-caption">
+          <strong>Schematic & Resistance Calculation Description:</strong> 
+          This schematic shows the circuit layout for assignment 2. Each LED was connected to a different pin on the 
+          Arduino. The resistances were calculated based on the voltage drop of the LEDs and the current 
+          required for each LED.
+        </p>
+      </div>
+    </section>
+
+    <!-- Circuit Section -->
+    <section class="documentation-section">
+      <h2>Circuit</h2>
+      <div class="image-container">
+        <img src="A2_Fade_circuit_img.jpg" alt="Physical Circuit Setup" class="project-image" />
+        <p class="image-caption">
+          <strong>Circuit Description:</strong> 
+          This circuit connects an RGB LED and a pushbutton to an Arduino. 
+          Each color pin of the RGB LED (Red, Green, and Blue) is connected to its own pin 
+          on the Arduino through a current-limiting resistor. This allows the program to control 
+          the brightness and mix colors by varying the output signals. Pressing the button sends a HIGH 
+          signal to pin 2. The Arduino code can respond by cycling through different LED colors, 
+          fading effects, or brightness levels depending on the firmware!
+        </p>
+      </div>
+    </section>
+
+    <!-- Firmware Section -->
+    <section class="documentation-section">
+      <h2>Firmware</h2>
+      <div class="image-container">
+        <img src="A2_Fade_Code.png" alt="Arduino Code Screenshot" class="project-image" />
+        <p class="image-caption">
+          <strong>Code Explanation:</strong> 
+          This Arduino code fades an RGB LED through red, green, and blue color transitions 
+          only while a pushbutton is pressed. Each LED color pin is controlled with analogWrite() 
+          using PWM signals to vary brightness and create smooth color blending. When the button is 
+          released, all LEDs turn off using a helper function. 
+        </p>
+      </div>
+    </section>
+
+    <!-- Circuit Operation Section -->
+    <section class="documentation-section">
+      <h2>Circuit Operation</h2>
+      <div class="media-container">
+        <div class="media-item">
+          <h4>GIF Version: low quality :/</h4>
+          <img src="A2_Fade.gif" alt="Animated GIF showing circuit operation" class="project-image operation-gif" />
+        </div>
+        <div class="media-item">
+          <h4>High Quality Video</h4>
+          <video controls class="project-video">
+            <source src="A2_Fade.MOV" type="video/quicktime">
+            <source src="A2_Fade.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <p class="image-caption">
+        <strong>Operation Description:</strong> 
+        The GIF and video above demonstrate the actual operation of the circuit. As shown, 
+        the LED only turns on when the buttons is pressed. If the button is held down, 
+        the LED will fade into different colors. When the button is released, the LED
+        turns off!
+      </p>
+    </section>
+
+    <!-- Additional Questions Section -->
+    <section class="questions-section">
+      <h2>Additional Questions</h2>
+      
+      <div class="question">
+        <h3>Questions 1 and 2</h3>
+        <div class="image-container">
+          <img src="A2_Additional_q.jpg" alt="Graph showing voltage across LEDs over time" class="project-image" />
+          <p class="image-caption">
+            <strong>Graph Explanation:</strong> 
+            This graph illustrates how Pulse Width Modulation (PWM) controls LED brightness in an Arduino circuit. 
+            The X-axis represents time (ms) and the Y-axis represents voltage (V). Each colored line shows a square 
+            wave signal corresponding to a different analogWrite() value: 
+            Green line → 100% duty cycle, LED receives constant 5V, appearing fully ON.
+            Red line → 50% duty cycle, LED is ON half the time, appearing at half brightness.
+            Blue line → 25% duty cycle, LED is ON a quarter of the time, appearing dim.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>Question 3: Actual Voltage vs. Theoretical Forward Voltage</h3>
+        <p><strong>Answer:</strong> The actual voltage I measured using my multimeter for a red LED
+        was 2.2V. The theoretical forward voltage using a datasheet is 2.0V. The measured
+        voltage is very close to the theoretical, with a slight tolerance!</p>
+      </div>
+
+      <div class="question">
+        <h3>Question 5: AI Tools Usage</h3>
+        <p><strong>Answer:</strong> How I Used AI Tools in this assignment:</p>
+        <ul>
+          <li>I used Cursor.AI to help me write the code for this website.</li>
+          <li>I used chatGPT to help me debug the code for the circuit.</li>
+          <li>chatGPT helped me understand the code that was already written in Arduino Button example</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Styling for better presentation -->
+    <style>
+      .documentation-section {
+        margin: 30px 0;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      
+      .image-container {
+        margin: 20px 0;
+        text-align: center;
+      }
+      
+      .media-container {
+        display: flex;
+        gap: 20px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .media-item {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+      }
+      
+      .media-item h4 {
+        margin: 10px 0;
+        color: #2c3e50;
+        font-size: 16px;
+      }
+      
+      .project-image {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .project-video {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .operation-gif {
+        border: 3px solid #4CAF50;
+      }
+      
+      .code-container {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        overflow-x: auto;
+      }
+      
+      .code-container pre {
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      
+      .code-description {
+        margin: 15px 0;
+        padding: 15px;
+        background-color: #e8f4fd;
+        border-left: 4px solid #2196F3;
+        border-radius: 4px;
+      }
+      
+      .questions-section {
+        margin: 40px 0;
+        padding: 25px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        border: 2px solid #e0e0e0;
+      }
+      
+      .question {
+        margin: 25px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        border-left: 4px solid #FF6B6B;
+      }
+      
+      .question-text-box {
+        margin: 25px 0;
+        padding: 20px;
+        background-color: #f0f8ff;
+        border-radius: 8px;
+        border-left: 4px solid #4169E1;
+        border: 1px solid #e0e0e0;
+      }
+      
+      .question-text-box h4 {
+        margin: 0 0 15px 0;
+        color: #2c3e50;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .question-text-box p {
+        margin: 0;
+        line-height: 1.6;
+        color: #333;
+      }
+      
+      .image-caption {
+        font-style: italic;
+        color: #666;
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      
+      h3 {
+        color: #34495e;
+        margin-top: 0;
+      }
+      
+      ul {
+        margin-left: 20px;
+      }
+      
+      li {
+        margin: 8px 0;
+      }
+    </style>
   </body>
 </html>

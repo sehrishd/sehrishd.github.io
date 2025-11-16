@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spaceship Game</title>
+
+    <!-- p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      #controls {
+        position: relative;
+        z-index: 10;
+        margin: 8px;
+      }
+      #status {
+        display: inline-block;
+        margin-left: 12px;
+        font-weight: 600;
+      }
+      canvas {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="controls">
+      <button id="connectButton">Connect to Arduino</button>
+      <span id="status">Not connected</span>
+    </div>
+
+    <!-- main p5 + serial logic -->
+    <script src="spaceship.js"></script>
+  </body>
+</html>

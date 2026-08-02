@@ -1,164 +1,374 @@
-
-
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-    <!-- 
-      TODO
-
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
-     <link rel="icon" href="../assets/images/1311.png" />
-     <title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A case study about designing thoughtful experiences for everyday life." />
+    <link rel="icon" href="../assets/images/1311.png" />
+    <title>Project Name — Sehrish Daud</title>
 
-		<link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/typography.css">
-    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/case-study.css" />
 
-		<script defer src="../js/script.js"></script>
-	</head>
-	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+    <script defer src="../js/case-study.js"></script>
+  </head>
+  <body>
 
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Portfolio Title</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
-          <span class="button-text">Contact Me</span>
+    <!-- Reading progress -->
+    <div class="cs-progress" aria-hidden="true">
+      <div class="cs-progress__bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar cs-nav">
+      <nav class="cs-nav__inner" aria-label="Primary">
+        <a class="nav-title-link cs-nav__brand" href="../index.html">
+          <span class="nav-title">Sehrish Daud</span>
         </a>
-      </a>
-    </div>
+        <a class="hero-cta hero-cta--secondary cs-nav__contact" href="mailto:whitevans.eth@gmail.com">
+          Contact Me
+        </a>
+      </nav>
+    </header>
 
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
+    <div class="cs-page">
+      <div class="cs-page__layout">
 
-      <!-- PROJECT HEADER -->
-      <div id="project-header">
-          <!-- 
-            TODO
+        <!-- Table of contents (desktop) -->
+        <aside class="cs-toc" aria-label="Table of contents">
+          <p class="cs-toc__label">On this page</p>
+          <ol class="cs-toc__list">
+            <li><a class="cs-toc__link is-active" href="#story">The Moment</a></li>
+            <li><a class="cs-toc__link" href="#solution">The Solution</a></li>
+            <li><a class="cs-toc__link" href="#opportunity">Why It Mattered</a></li>
+            <li><a class="cs-toc__link" href="#research">What We Learned</a></li>
+            <li><a class="cs-toc__link" href="#process">Design Process</a></li>
+            <li><a class="cs-toc__link" href="#reflection">Reflection</a></li>
+          </ol>
+        </aside>
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
-      </div>
+        <main class="cs-main" id="main-content">
+          <article class="cs-article">
 
-      <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
+            <!-- 1. Hero (typography — visual payoff lives in The Solution) -->
+            <header class="cs-hero" id="top">
+              <div class="cs-reveal">
+                <a class="cs-back-link" href="../index.html">← Selected Work</a>
+              </div>
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
-      <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
-        <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
-        </div>
-      </div>
+              <div class="cs-reveal" style="transition-delay: 80ms">
+                <p class="cs-hero__impact">Helping people navigate a meaningful everyday moment.</p>
+              </div>
 
-      <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!-- 
-              TODO
+              <div class="cs-reveal" style="transition-delay: 140ms">
+                <h1 class="cs-hero__title">Project Name</h1>
+              </div>
 
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+              <div class="cs-reveal" style="transition-delay: 200ms">
+                <dl class="cs-hero__meta">
+                  <div class="cs-hero__meta-item">
+                    <dt>Role</dt>
+                    <dd>Lead Designer</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Timeline</dt>
+                    <dd>Month Year – Month Year</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Team</dt>
+                    <dd>Name, Name, Name</dd>
+                  </div>
+                </dl>
+              </div>
+            </header>
 
-              Full Width Image:
+            <!-- 2. Story — narrative / problem -->
+            <section class="cs-section cs-section--text" id="story" aria-labelledby="story-heading">
+              <p class="cs-label cs-reveal">The Moment</p>
+              <h2 class="visually-hidden" id="story-heading">The Moment</h2>
 
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
+              <blockquote class="cs-quote cs-reveal">
+                <p>A real quote from a participant that captures the human tension in everyday life.</p>
+                <cite>Participant role or context</cite>
+              </blockquote>
 
-              Half Width Image: 
+              <div class="cs-prose">
+                <p class="cs-body cs-reveal" style="transition-delay: 80ms">
+                  Open with a narrative scene — where someone is, what they are trying to do, and what feels harder than it should. Avoid jumping straight into design language.
+                </p>
+                <p class="cs-body cs-reveal" style="transition-delay: 160ms">
+                  Close this section with a sentence that reframes the situation. The reader should feel the problem before they analyze it.
+                </p>
+              </div>
+            </section>
 
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
+            <!--
+              3. The Solution — shown immediately after the problem
+              For product design: use product mockups + "Key features"
+              For space / experience design: use environment photography + "Experience moments"
+              Set highlights label to match: Key features | Experience moments | What stands out
             -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-        </div>
+            <section class="cs-section cs-section--visual cs-section--solution" id="solution" aria-labelledby="solution-heading">
+              <p class="cs-label cs-reveal">The Solution</p>
+              <h2 class="visually-hidden" id="solution-heading">The Solution</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Introduce the design right after the problem — show what you made and why it matters, before diving into research or process.
+              </p>
+
+              <figure class="cs-figure cs-figure--full cs-reveal" style="transition-delay: 80ms">
+                <img
+                  class="cs-figure__image"
+                  src="../assets/images/Minder/Minder-Hero.png"
+                  alt="Hero visual — product mockup, physical prototype, or space photography"
+                  loading="eager"
+                />
+                <figcaption class="cs-figure__caption">The solution as experienced — replace with your primary product, prototype, or space visual.</figcaption>
+              </figure>
+
+              <div class="cs-highlights">
+                <p class="cs-highlights-label cs-reveal">Key features</p>
+
+                <div class="cs-row cs-reveal">
+                  <div class="cs-row__content">
+                    <h3 class="cs-row__heading">Experience moment, not feature name</h3>
+                    <p class="cs-body">
+                      Describe one capability that makes the product stand out — what it enables people to do or feel. Frame it as an experience, not a spec sheet item.
+                    </p>
+                  </div>
+                  <figure class="cs-row__media">
+                    <img
+                      class="cs-row__image"
+                      src="../assets/images/Minder/hifi-group1.png"
+                      alt="Placeholder feature visual"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Optional caption.</figcaption>
+                  </figure>
+                </div>
+
+                <div class="cs-row cs-row--reverse cs-reveal">
+                  <div class="cs-row__content">
+                    <h3 class="cs-row__heading">Another defining detail</h3>
+                    <p class="cs-body">
+                      A second feature or interaction that shows intentional design. For space projects, describe a spatial moment — how the environment shapes behavior — rather than a UI screen.
+                    </p>
+                  </div>
+                  <figure class="cs-row__media">
+                    <img
+                      class="cs-row__image"
+                      src="../assets/images/Minder/hifi-group2.png"
+                      alt="Placeholder second highlight"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Optional caption.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <!-- 4. Opportunity — deeper context (optional) -->
+            <section class="cs-section" id="opportunity" aria-labelledby="opportunity-heading">
+              <p class="cs-label cs-reveal">Why It Mattered</p>
+
+              <h2 class="cs-section__heading cs-reveal" id="opportunity-heading">
+                What was really at stake for people navigating this moment.
+              </h2>
+
+              <div class="cs-prose cs-reveal" style="transition-delay: 80ms">
+                <p class="cs-body">
+                  Explain why this problem deserved attention — not in business terms, but in human terms. What everyday experience was being shaped? What felt normal that was actually creating friction?
+                </p>
+              </div>
+
+              <p class="cs-insight cs-reveal" style="transition-delay: 160ms">
+                One clear insight line that captures the opportunity in plain language.
+              </p>
+
+              <figure class="cs-figure cs-figure--full cs-reveal" style="transition-delay: 240ms">
+                <img
+                  class="cs-figure__image"
+                  src="../assets/images/Minder/minder-mid-fi.png"
+                  alt="Placeholder contextual visual — diagram, photo, or artifact"
+                  loading="lazy"
+                />
+                <figcaption class="cs-figure__caption">Optional caption explaining what this visual reveals.</figcaption>
+              </figure>
+            </section>
+
+            <!-- 5. Research (optional) -->
+            <section class="cs-section" id="research" aria-labelledby="research-heading">
+              <p class="cs-label cs-reveal">What We Learned</p>
+              <h2 class="visually-hidden" id="research-heading">What We Learned</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Share understanding as a story — not a methods dump. Focus on what changed how you thought.
+              </p>
+
+              <div class="cs-stack">
+                <div class="cs-prose cs-reveal">
+                  <h3 class="cs-subheading">Behavioral pattern</h3>
+                  <p class="cs-body">
+                    Describe a recurring behavior, workaround, or tension you observed across participants.
+                  </p>
+                </div>
+
+                <blockquote class="cs-quote cs-quote--inline cs-reveal">
+                  <p>A second voice from research that deepens empathy or reveals nuance.</p>
+                  <cite>Research participant</cite>
+                </blockquote>
+
+                <figure class="cs-figure cs-figure--full cs-reveal">
+                  <img
+                    class="cs-figure__image"
+                    src="../assets/images/Minder/minder-low-fi.png"
+                    alt="Placeholder research artifact — journey map, notes, or affinity diagram"
+                    loading="lazy"
+                  />
+                  <figcaption class="cs-figure__caption">What this artifact helped the team understand.</figcaption>
+                </figure>
+
+                <div class="cs-figure-group cs-figure-group--pair">
+                  <figure class="cs-figure cs-figure--half cs-reveal">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Minder/hifi-group1.png"
+                      alt="Placeholder research image one"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Caption for first artifact.</figcaption>
+                  </figure>
+                  <figure class="cs-figure cs-figure--half cs-reveal" style="transition-delay: 80ms">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Minder/hifi-group2.png"
+                      alt="Placeholder research image two"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Caption for second artifact.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <!-- 6. Design Process (optional) -->
+            <section class="cs-section" id="process" aria-labelledby="process-heading">
+              <p class="cs-label cs-reveal">Design Process</p>
+              <h2 class="visually-hidden" id="process-heading">Design Process</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Walk through how the work evolved — sketches, wireframes, prototypes, and the decisions behind them.
+              </p>
+
+              <div class="cs-stack cs-stack--spacious">
+
+                <div class="cs-row cs-reveal">
+                  <div class="cs-row__content">
+                    <h3 class="cs-row__heading">Experience moment, not feature name</h3>
+                    <p class="cs-body">
+                      Explain one design decision: what you tried, what you rejected, and why this direction honored the insight above.
+                    </p>
+                  </div>
+                  <figure class="cs-row__media">
+                    <img
+                      class="cs-row__image"
+                      src="../assets/images/Minder/minder-mid-fi.png"
+                      alt="Placeholder process image — sketch or wireframe"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Optional caption.</figcaption>
+                  </figure>
+                </div>
+
+                <div class="cs-row cs-row--reverse cs-reveal">
+                  <div class="cs-row__content">
+                    <h3 class="cs-row__heading">Another iteration or decision point</h3>
+                    <p class="cs-body">
+                      Describe a pivot, constraint, or tradeoff. Keep the focus on intention, not output volume.
+                    </p>
+                  </div>
+                  <figure class="cs-row__media">
+                    <img
+                      class="cs-row__image"
+                      src="../assets/images/Minder/minder-low-fi.png"
+                      alt="Placeholder iteration image"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Optional caption.</figcaption>
+                  </figure>
+                </div>
+
+                <figure class="cs-figure cs-figure--full cs-reveal">
+                  <img
+                    class="cs-figure__image"
+                    src="../assets/images/Minder/hifi-group1.png"
+                    alt="Placeholder prototype or testing image"
+                    loading="lazy"
+                  />
+                  <figcaption class="cs-figure__caption">How you validated the direction with people.</figcaption>
+                </figure>
+
+              </div>
+            </section>
+
+            <!-- 7. Reflection -->
+            <section class="cs-section cs-section--text cs-section--afterword" id="reflection" aria-labelledby="reflection-heading">
+              <p class="cs-label cs-reveal">Reflection</p>
+              <h2 class="visually-hidden" id="reflection-heading">Reflection</h2>
+
+              <div class="cs-reflection-block cs-reveal">
+                <h3 class="cs-subheading">What I learned</h3>
+                <ul class="cs-reflection-list">
+                  <li class="cs-body">What this project taught you about designing for everyday behavior.</li>
+                  <li class="cs-body">What surprised you — a research finding, a decision, or a collaboration moment.</li>
+                </ul>
+              </div>
+
+              <div class="cs-reflection-block cs-reveal" style="transition-delay: 80ms">
+                <h3 class="cs-subheading">What I would improve</h3>
+                <ul class="cs-reflection-list">
+                  <li class="cs-body">What you would explore further or do differently with more time.</li>
+                </ul>
+              </div>
+
+              <p class="cs-body cs-reflection-growth cs-reveal" style="transition-delay: 160ms">
+                One honest sentence about how this work shaped you as a designer.
+              </p>
+
+              <p class="cs-credits cs-reveal" style="transition-delay: 240ms">
+                Team, course, or acknowledgments — keep brief and human.
+              </p>
+            </section>
+
+            <!-- 8. Next Project -->
+            <nav class="cs-next cs-reveal" aria-label="Continue reading">
+              <a class="cs-next__project" href="./project-template.html">
+                <span class="cs-next__eyebrow">Continue reading</span>
+                <span class="cs-next__impact">Helping households become more mindful of water.</span>
+                <span class="cs-next__title">Glow Tap</span>
+              </a>
+            </nav>
+
+          </article>
+        </main>
+
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+    <footer id="footer" class="cs-footer">
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com" aria-label="Email">
+        <img src="../assets/icons/mail.svg" class="footer-icon" alt="" />
+      </a>
+    </footer>
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
-
-	</body>
+  </body>
 </html>

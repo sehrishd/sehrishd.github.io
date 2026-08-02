@@ -50,7 +50,8 @@ Search for it and you'll find all the changes you need to make. That being said,
 
 - Image assets that you add for projects, header photo, or the favicon should go in the `assets/images` folder
 - For every new project page, make a copy of `project-template.html` and keep it in the `project-pages` folder
-- All styling is located in the `css` folder, have at it if you feel like changing up the styling.
+- All styling lives in the `css` folder: `tokens.css`, `base.css`, `typography.css`, `components.css`, and `layout.css`.
+- Case studies use React + Vite. See [CASE_STUDY.md](./CASE_STUDY.md) for the reusable template workflow.
 - The `js` folder holds one script file that you can add any custom Javascript into.
 <br />
 

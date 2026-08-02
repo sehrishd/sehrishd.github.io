@@ -1,35 +1,117 @@
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/**
+ * Typography — editorial hierarchy and text utilities
+ */
+
+/* ——— Semantic headings ——— */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-weight: var(--weight-medium);
 }
 
-.nav-title {
-  font-weight: 700;
-  font-size: 24px;
+h1 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h1);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
 }
 
-.button-text {
-  font-size: 14px;
-  font-weight: 700;
+h2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
 }
 
-.image-caption {
-  font-size: 14px;
-  font-weight: 500;
+h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h3);
+  line-height: var(--leading-snug);
 }
+
+/* ——— Legacy / component type classes ——— */
 
 .main-title {
-  font-size: 40px;
-  font-weight: 700;
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
 }
 
 .subheader-text {
-  font-size: 20px;
-  font-weight: 700;
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
 }
 
 .body-text {
-  font-size: 16px;
-  font-weight: 500;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-relaxed);
+}
+
+.body-text + .body-text {
+  margin-top: var(--space-3);
+}
+
+.image-caption {
+  color: var(--color-text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-normal);
+}
+
+.nav-title {
+  color: var(--color-text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+}
+
+.button-text {
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: none;
+}
+
+/* ——— Text width constraints ——— */
+
+.text-measure {
+  max-width: var(--container-text);
+}
+
+.text-measure-narrow {
+  max-width: var(--container-narrow);
+}
+
+/* ——— Truncation (project cards — until layout redesign) ——— */
+
+.project-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .project-card-text {
@@ -37,13 +119,5 @@ body {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.project-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }

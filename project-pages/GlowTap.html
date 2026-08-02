@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Glow Tap — a physical faucet attachment that makes water use visible through light. A case study by Sehrish Daud." />
+    <link rel="icon" href="../assets/images/1311.png" />
+    <title>Glow Tap — Sehrish Daud</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/case-study.css" />
+
+    <script defer src="../js/case-study.js"></script>
+  </head>
+  <body>
+
+    <div class="cs-progress" aria-hidden="true">
+      <div class="cs-progress__bar"></div>
+    </div>
+
+    <header class="navbar cs-nav">
+      <nav class="cs-nav__inner" aria-label="Primary">
+        <a class="nav-title-link cs-nav__brand" href="../index.html">
+          <span class="nav-title">Sehrish Daud</span>
+        </a>
+        <a class="hero-cta hero-cta--secondary cs-nav__contact" href="mailto:whitevans.eth@gmail.com">
+          Contact Me
+        </a>
+      </nav>
+    </header>
+
+    <div class="cs-page">
+      <div class="cs-page__layout">
+
+        <aside class="cs-toc" aria-label="Table of contents">
+          <p class="cs-toc__label">On this page</p>
+          <ol class="cs-toc__list">
+            <li><a class="cs-toc__link is-active" href="#story">Invisible Waste</a></li>
+            <li><a class="cs-toc__link" href="#concept">Concept</a></li>
+            <li><a class="cs-toc__link" href="#prototypes">Four Prototypes</a></li>
+            <li><a class="cs-toc__link" href="#reflection">Reflection</a></li>
+          </ol>
+        </aside>
+
+        <main class="cs-main" id="main-content">
+          <article class="cs-article">
+
+            <!-- Hero -->
+            <header class="cs-hero" id="top">
+              <div class="cs-reveal">
+                <a class="cs-back-link" href="../index.html">← Selected Work</a>
+              </div>
+
+              <div class="cs-reveal" style="transition-delay: 80ms">
+                <p class="cs-hero__impact">Helping households become more mindful of water usage.</p>
+              </div>
+
+              <div class="cs-reveal" style="transition-delay: 140ms">
+                <h1 class="cs-hero__title">Glow Tap</h1>
+              </div>
+
+              <div class="cs-reveal" style="transition-delay: 200ms">
+                <dl class="cs-hero__meta">
+                  <div class="cs-hero__meta-item">
+                    <dt>Role</dt>
+                    <dd>Physical prototyping — cardboard &amp; 3D modeling, laser cutting, circuits, user testing</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Timeline</dt>
+                    <dd>March 2025 – June 2025</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Team</dt>
+                    <dd>Sehrish Daud, Darby Moore, Sophie Messer</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Context</dt>
+                    <dd>HCDE 351 · OnShape, Cuttle, soldering</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="cs-hero__media-wrap cs-reveal" style="transition-delay: 280ms">
+                <figure class="cs-hero__media">
+                  <img
+                    class="cs-hero__image"
+                    src="../assets/images/Glow Tap/GlowTap Main Pic.png"
+                    alt="Glow Tap attached to a bathroom faucet — final 3D-printed prototype with smiley-face light cutouts"
+                    loading="eager"
+                  />
+                </figure>
+              </div>
+            </header>
+
+            <!-- Problem -->
+            <section class="cs-section cs-section--text" id="story" aria-labelledby="story-heading">
+              <p class="cs-label cs-reveal">Invisible Waste</p>
+              <h2 class="visually-hidden" id="story-heading">Invisible Waste</h2>
+
+              <p class="cs-body cs-reveal">
+                Most people leave the tap running longer than they need — not from indifference, but because water use is invisible. You turn it on, look in the mirror, and the stream keeps going.
+              </p>
+
+              <p class="cs-body cs-reveal" style="transition-delay: 80ms">
+                For HCDE 351, our team drew on UN Sustainable Development Goal 6 — clean water and sanitation — and focused on one everyday moment: the bathroom sink. Could a small, non-obtrusive attachment make people notice when water had been running too long?
+              </p>
+            </section>
+
+            <!-- Concept -->
+            <section class="cs-section cs-section--visual cs-section--solution" id="concept" aria-labelledby="concept-heading">
+              <p class="cs-label cs-reveal">See Your Water, Save Your Water</p>
+              <h2 class="visually-hidden" id="concept-heading">See Your Water, Save Your Water</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Glow Tap clips onto a faucet and uses light to signal when water should still run — and when it is time to stop. Green means go, yellow means wrap up, red means turn it off now.
+              </p>
+
+              <figure class="cs-figure cs-figure--full cs-reveal" style="transition-delay: 60ms">
+                <img
+                  class="cs-figure__image"
+                  src="../assets/images/Glow Tap/final-3d-printed.png"
+                  alt="Final Glow Tap prototype on a bathroom faucet with smiley-face light openings"
+                  loading="lazy"
+                />
+                <figcaption class="cs-figure__caption">Final form — circular, compact, meant to feel part of the sink.</figcaption>
+              </figure>
+
+              <div class="cs-figure-group cs-figure-group--trio cs-reveal" style="transition-delay: 100ms">
+                <figure class="cs-figure">
+                  <img
+                    class="cs-figure__image"
+                    src="../assets/images/Glow Tap/glowgreen.png"
+                    alt="Glow Tap showing green light — water use is within a good range"
+                    loading="lazy"
+                  />
+                  <figcaption class="cs-figure__caption">Green — water is running, usage is fine.</figcaption>
+                </figure>
+                <figure class="cs-figure">
+                  <img
+                    class="cs-figure__image"
+                    src="../assets/images/Glow Tap/glowyellow.png"
+                    alt="Glow Tap showing yellow light — time to start wrapping up"
+                    loading="lazy"
+                  />
+                  <figcaption class="cs-figure__caption">Yellow — start finishing up.</figcaption>
+                </figure>
+                <figure class="cs-figure">
+                  <img
+                    class="cs-figure__image"
+                    src="../assets/images/Glow Tap/glowred.png"
+                    alt="Glow Tap showing red light — time to turn off the water"
+                    loading="lazy"
+                  />
+                  <figcaption class="cs-figure__caption">Red — turn the water off.</figcaption>
+                </figure>
+              </div>
+
+              <p class="cs-body cs-reveal" style="transition-delay: 140ms">
+                Smiley-face cutouts give each state an emotional read — happy, cautious, stop — so the signal works even for people who struggle with color alone. Our prototypes tracked elapsed time rather than actual volume; a shipping product would need flow sensing.
+              </p>
+
+              <div class="cs-embed cs-embed--feature cs-reveal" style="transition-delay: 180ms">
+                <div class="cs-embed__frame">
+                  <iframe
+                    src="https://www.youtube.com/embed/vj9YOSzsvs4"
+                    title="Glow Tap product demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <p class="cs-figure__caption">Demo — Glow Tap in use during our Wizard-of-Oz test.</p>
+              </div>
+            </section>
+
+            <!-- Prototypes -->
+            <section class="cs-section" id="prototypes" aria-labelledby="prototypes-heading">
+              <p class="cs-label cs-reveal">Four Prototypes</p>
+              <h2 class="visually-hidden" id="prototypes-heading">Four Prototypes</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Each round answered one question before we moved on — form, light language, fit, and behavior. We tested with real people at every stage except the first 3D sizing pass, which we evaluated as a team on the sink.
+              </p>
+
+              <figure class="cs-figure cs-figure--half cs-reveal">
+                <img
+                  class="cs-figure__image"
+                  src="../assets/images/Glow Tap/GlowTap-sketch1.jpeg"
+                  alt="Early pencil sketches exploring Glow Tap form and faucet attachment"
+                  loading="lazy"
+                />
+                <figcaption class="cs-figure__caption">Early sketches — exploring shape before any material hit the sink.</figcaption>
+              </figure>
+
+              <div class="cs-steps">
+
+                <article class="cs-step cs-reveal">
+                  <p class="cs-step__label">Prototype 1 · Cardboard</p>
+                  <h3 class="cs-step__heading">Which shape belongs on a faucet?</h3>
+                  <p class="cs-body">
+                    Chipboard models let us test attachment and feel without committing to print time. Circle beat hexagon — easier to attach, cleaner against the sink, less bulky.
+                  </p>
+                  <blockquote class="cs-quote cs-quote--inline cs-reveal">
+                    <p>I like the circle shape better — it's easier to attach and looks cleaner.</p>
+                    <cite>Early test participant</cite>
+                  </blockquote>
+                  <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Glow Tap/cardboard1.png"
+                      alt="Cardboard prototypes — circular and hexagonal forms on a faucet"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Low-fi chipboard — testing fit and desirability before 3D printing.</figcaption>
+                  </figure>
+                </article>
+
+                <article class="cs-step cs-reveal">
+                  <p class="cs-step__label">Prototype 2 · Laser-cut</p>
+                  <h3 class="cs-step__heading">Which light shape reads instantly?</h3>
+                  <p class="cs-body">
+                    Laser-cut face plates with colored tape simulated the LED states. Participants understood green, yellow, and red without explanation — but smiley faces won over plus/minus symbols, which some read as encouraging more water.
+                  </p>
+                  <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Glow Tap/laser-cut 2.png"
+                      alt="Laser-cut prototypes testing different smiley-face and symbol light patterns"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Mid-fi laser-cut faces — flashlight and colored tape stood in for LEDs.</figcaption>
+                  </figure>
+                </article>
+
+                <article class="cs-step cs-reveal">
+                  <p class="cs-step__label">Prototype 3 · 3D print</p>
+                  <h3 class="cs-step__heading">Would it stay on through real use?</h3>
+                  <p class="cs-body">
+                    Three rounds of printing — sizing, interior grip, and final form — before we had something that stayed on the faucet and could hold the lights.
+                  </p>
+
+                  <div class="cs-figure-stack cs-reveal" style="margin-top: var(--space-4)">
+
+                    <div>
+                      <p class="cs-step__label">Round 1 · Sizing</p>
+                      <p class="cs-body">We printed three diameters in OnShape — 3", 3.05", and 3.1" — and tested each on the sink.</p>
+                      <div class="cs-figure-group cs-figure-group--pair" style="margin-top: var(--space-2)">
+                        <figure class="cs-figure">
+                          <img
+                            class="cs-figure__image"
+                            src="../assets/images/Glow Tap/3d1.png"
+                            alt="OnShape CAD model of three Glow Tap diameter variations — 3 inch, 3.05 inch, and 3.1 inch"
+                            loading="lazy"
+                          />
+                          <figcaption class="cs-figure__caption">Three diameters modeled in OnShape.</figcaption>
+                        </figure>
+                        <figure class="cs-figure">
+                          <img
+                            class="cs-figure__image"
+                            src="../assets/images/Glow Tap/3d2.png"
+                            alt="Orange 3D-printed Glow Tap fitted on a bathroom faucet aerator"
+                            loading="lazy"
+                          />
+                          <figcaption class="cs-figure__caption">3" fit the aerator but slipped off easily; larger sizes fell off immediately.</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="cs-step__label">Round 2 · Interior grip</p>
+                      <p class="cs-body">Smooth interior walls were the problem. We modeled dot and diagonal textures to see which would hold during water flow.</p>
+                      <div class="cs-figure-group cs-figure-group--pair" style="margin-top: var(--space-2)">
+                        <figure class="cs-figure">
+                          <img
+                            class="cs-figure__image"
+                            src="../assets/images/Glow Tap/3d print_round2_diagonalridges.png"
+                            alt="OnShape CAD model of Glow Tap with diagonal ridge interior texture"
+                            loading="lazy"
+                          />
+                          <figcaption class="cs-figure__caption">Diagonal ridge texture — slipped off during flow.</figcaption>
+                        </figure>
+                        <figure class="cs-figure">
+                          <img
+                            class="cs-figure__image"
+                            src="../assets/images/Glow Tap/final-3d1.png"
+                            alt="OnShape CAD model of Glow Tap with dot texture interior and smiley-face cutouts"
+                            loading="lazy"
+                          />
+                          <figcaption class="cs-figure__caption">Dot texture — held securely on the faucet.</figcaption>
+                        </figure>
+                      </div>
+                      <figure class="cs-figure cs-figure--full" style="margin-top: var(--space-3)">
+                        <img
+                          class="cs-figure__image"
+                          src="../assets/images/Glow Tap/3D_printed.jpeg"
+                          alt="Two yellow 3D-printed Glow Tap prototypes side by side — dot texture and diagonal ridge versions"
+                          loading="lazy"
+                        />
+                        <figcaption class="cs-figure__caption">Both textures printed — dot grip won in real-world testing.</figcaption>
+                      </figure>
+                    </div>
+
+                    <div>
+                      <p class="cs-step__label">Round 3 · Final form</p>
+                      <p class="cs-body">We combined the winning grip with an inner chamber for LEDs and the smiley-face cutouts from laser-cut testing.</p>
+                      <figure class="cs-figure cs-figure--full" style="margin-top: var(--space-2)">
+                        <img
+                          class="cs-figure__image"
+                          src="../assets/images/Glow Tap/final-3d-printed.png"
+                          alt="Final 3D-printed Glow Tap on a bathroom faucet with smiley-face light cutouts"
+                          loading="lazy"
+                        />
+                        <figcaption class="cs-figure__caption">Final print — dot texture, LED chamber, and smiley cutouts, ready for the circuit build.</figcaption>
+                      </figure>
+                    </div>
+
+                  </div>
+                </article>
+
+                <article class="cs-step cs-reveal">
+                  <p class="cs-step__label">Prototype 4 · Wizard of Oz</p>
+                  <h3 class="cs-step__heading">Would the lights actually change behavior?</h3>
+                  <p class="cs-body">
+                    A working circuit with pico LEDs and a teammate controlling colors from below the sink. No flow sensors yet — just a behavioral test. The participant asked <em>"It's yellow, do I stop?"</em> and turned off the water at red without being told.
+                  </p>
+                  <blockquote class="cs-quote cs-quote--inline cs-reveal">
+                    <p>The smiley faces would be helpful for those who don't fully understand the lights.</p>
+                    <cite>Wizard-of-Oz test participant</cite>
+                  </blockquote>
+                  <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Glow Tap/circuit2.jpeg"
+                      alt="Glow Tap circuit with pico LED lights wired along the sink for the Wizard-of-Oz test"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Working circuit — lights controlled manually during the behavioral test.</figcaption>
+                  </figure>
+                </article>
+
+              </div>
+            </section>
+
+            <!-- Reflection -->
+            <section class="cs-section cs-section--text cs-section--afterword" id="reflection" aria-labelledby="reflection-heading">
+              <p class="cs-label cs-reveal">Reflection</p>
+              <h2 class="visually-hidden" id="reflection-heading">Reflection</h2>
+
+              <div class="cs-reflection-block cs-reveal">
+                <h3 class="cs-subheading">What I learned</h3>
+                <ul class="cs-reflection-list">
+                  <li class="cs-body">Physical prototypes fail in ways screens don't — a 3D print that fits but slips off teaches more than a dozen renderings. Each material forced a decision.</li>
+                  <li class="cs-body">People understood the light system without a manual. Color plus expression did the work — traffic-light logic plus smiley faces covered both familiarity and clarity.</li>
+                  <li class="cs-body">Showcase feedback pushed us past "does it work?" — reviewers asked how it would sense flow, whether red feels punitive, and how blind or low-vision users would read the signal.</li>
+                </ul>
+              </div>
+
+              <div class="cs-reflection-block cs-reveal" style="transition-delay: 80ms">
+                <h3 class="cs-subheading">What I'd do next</h3>
+                <ul class="cs-reflection-list">
+                  <li class="cs-body">Replace the time proxy with real flow sensing — and define exactly when green becomes yellow becomes red.</li>
+                  <li class="cs-body">Design for accessibility beyond color: haptics, patterns, or audio cues for blind and low-vision users.</li>
+                  <li class="cs-body">Test beyond the bathroom sink — showers and kitchen taps are where water adds up fastest.</li>
+                </ul>
+              </div>
+
+              <p class="cs-body cs-reflection-growth cs-reveal" style="transition-delay: 160ms">
+                This was my first time building something you could hold, solder, and put on a real faucet — and I loved it. Glow Tap reminded me that good design isn't always on a screen; sometimes it's a dot texture that finally stays put.
+              </p>
+
+              <p class="cs-credits cs-reveal" style="transition-delay: 240ms">
+                HCDE 351 · Team: Darby Moore, Sophie Messer
+              </p>
+            </section>
+
+            <!-- Next Project -->
+            <nav class="cs-next cs-reveal" aria-label="Continue reading">
+              <a class="cs-next__project" href="./project-template.html">
+                <span class="cs-next__eyebrow">Continue reading</span>
+                <span class="cs-next__impact">Helping makers feel like they belong.</span>
+                <span class="cs-next__title">MakeLab</span>
+              </a>
+            </nav>
+
+          </article>
+        </main>
+
+      </div>
+    </div>
+
+    <footer id="footer" class="cs-footer">
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com" aria-label="Email">
+        <img src="../assets/icons/mail.svg" class="footer-icon" alt="" />
+      </a>
+    </footer>
+
+  </body>
+</html>

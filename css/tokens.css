@@ -1,0 +1,167 @@
+/**
+ * Design tokens — editorial, warm, calm
+ * Morning palette — inspired by linen, warm wood, soft sky, sage, paper, sunlight
+ * Source of truth for the portfolio visual system
+ */
+
+:root {
+  /* ——— Morning palette (raw) ——— */
+  --morning-ivory: #faf7f2;
+  --morning-cream: #f5f0e8;
+  --morning-oatmeal: #ede7dc;
+  --morning-sand: #d4c9b8;
+  --morning-linen: #f0ebe3;
+  --morning-border: #e8e0d4;
+  --morning-terracotta: #a06e58;
+  --morning-terracotta-deep: #8b5e4a;
+  --morning-terracotta-dark: #765040;
+  --morning-peach: #c4a090;
+  --morning-sage: #728272;
+  --morning-slate: #6e8094;
+  --morning-charcoal: #2e2a26;
+  --morning-coffee: #4a4038;
+  --morning-stone: #6b635a;
+  --morning-paper: #958c82;
+
+  /* ——— Background ——— */
+  --color-bg: var(--morning-ivory);
+  --color-bg-subtle: var(--morning-oatmeal);
+  --color-bg-nav: rgba(250, 247, 242, 0.92);
+
+  /* Micro surfaces only — image frames, inputs; never large section fills */
+  --color-bg-elevated: var(--morning-cream);
+
+  /* ——— Typography ——— */
+  --color-text-primary: var(--morning-charcoal);
+  --color-text-secondary: var(--morning-coffee);
+  --color-text-tertiary: var(--morning-stone);
+  --color-text-muted: var(--morning-paper);
+  --color-text-on-accent: var(--morning-ivory);
+
+  /* ——— Border ——— */
+  --color-border-subtle: var(--morning-linen);
+  --color-border: var(--morning-border);
+  --color-border-strong: var(--morning-sand);
+
+  /* ——— Primary accent (terracotta — warm wood, sunlight) ——— */
+  --color-accent: var(--morning-terracotta);
+  --color-accent-text: var(--morning-terracotta-deep); /* WCAG AA on ivory/cream */
+  --color-accent-hover: var(--morning-terracotta-dark);
+  --color-accent-muted: rgba(160, 110, 88, 0.14);
+  --color-accent-subtle: rgba(160, 110, 88, 0.06);
+
+  /* ——— Secondary accents (use sparingly) ——— */
+  --color-accent-peach: var(--morning-peach);
+  --color-accent-sage: var(--morning-sage);
+  --color-accent-slate: var(--morning-slate);
+
+  /* ——— Semantic ——— */
+  --color-link: var(--morning-terracotta-deep);
+  --color-link-hover: var(--morning-terracotta-dark);
+  --color-focus: var(--morning-slate);
+  --color-focus-ring: rgba(110, 128, 148, 0.32);
+  --color-success: var(--morning-sage);
+  --color-success-muted: rgba(114, 130, 114, 0.14);
+
+  /* ——— Form ——— */
+  --color-input-bg: var(--morning-cream);
+  --color-input-border: var(--morning-border);
+  --color-input-border-hover: var(--morning-sand);
+  --color-input-border-focus: var(--morning-slate);
+  --color-input-placeholder: var(--morning-paper);
+
+  /* ——— Scroll ——— */
+  --color-scroll-track: var(--morning-ivory);
+  --color-scroll-thumb: var(--morning-sand);
+  --color-scroll-thumb-hover: var(--morning-stone);
+
+  /* ——— Typography ——— */
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --text-display: clamp(2.375rem, 3.5vw + 1rem, 3.5rem);
+  --text-hero: clamp(2.75rem, 5vw + 1rem, 4.5rem);
+  --text-impact: clamp(1.875rem, 3vw + 0.5rem, 3rem);
+  --text-h1: clamp(2rem, 2.5vw + 0.75rem, 2.5rem);
+  --text-h2: clamp(1.375rem, 1.5vw + 0.75rem, 1.75rem);
+  --text-h3: clamp(1.0625rem, 0.5vw + 0.9rem, 1.25rem);
+  --text-body: 1.0625rem;
+  --text-small: 0.875rem;
+  --text-micro: 0.8125rem;
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.65;
+  --leading-relaxed: 1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+
+  /* ——— Spacing (8px base) ——— */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 5rem;
+  --space-7: 7.5rem;
+  --space-8: 10rem;
+
+  /* ——— Layout ——— */
+  --container-max: 72rem;
+  --container-content: 60rem;
+  --container-text: 45rem;
+  --container-narrow: 40rem;
+
+  --page-margin: clamp(1.5rem, 5vw, 5rem);
+  --nav-height: 4.75rem;
+
+  --grid-columns: 12;
+  --grid-gap: var(--space-2);
+  --grid-gap-lg: var(--space-3);
+
+  /* ——— Shape ——— */
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* ——— Shadow (used sparingly) ——— */
+  --shadow-none: none;
+  --shadow-subtle: 0 1px 2px rgba(46, 42, 38, 0.05);
+  --shadow-soft: 0 8px 32px rgba(46, 42, 38, 0.07);
+
+  /* ——— Border ——— */
+  --border-width: 1px;
+  --border-width-strong: 2px;
+
+  /* ——— Motion ——— */
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  --ease-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --transition-color: color var(--duration-fast) var(--ease-default);
+  --transition-opacity: opacity var(--duration-fast) var(--ease-default);
+  --transition-border: border-color var(--duration-fast) var(--ease-default);
+  --transition-transform: transform var(--duration-normal) var(--ease-out);
+  --transition-background: background-color var(--duration-fast) var(--ease-default);
+
+  --hero-enter-distance: 1.25rem;
+
+  /* ——— Icons ——— */
+  --icon-sm: 1rem;
+  --icon-md: 1.125rem;
+  --icon-lg: 1.25rem;
+  --icon-stroke: 1.5;
+
+  /* ——— Images ——— */
+  --image-radius: var(--radius-sm);
+  --image-saturate: 0.98;
+}

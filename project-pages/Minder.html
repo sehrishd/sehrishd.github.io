@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="How Minder helps UW STEM students find study partners and build meaningful academic connections — a case study by Sehrish Daud." />
+    <link rel="icon" href="../assets/images/1311.png" />
+    <title>Minder — Sehrish Daud</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/case-study.css" />
+
+    <script defer src="../js/case-study.js"></script>
+  </head>
+  <body>
+
+    <div class="cs-progress" aria-hidden="true">
+      <div class="cs-progress__bar"></div>
+    </div>
+
+    <header class="navbar cs-nav">
+      <nav class="cs-nav__inner" aria-label="Primary">
+        <a class="nav-title-link cs-nav__brand" href="../index.html">
+          <span class="nav-title">Sehrish Daud</span>
+        </a>
+        <a class="hero-cta hero-cta--secondary cs-nav__contact" href="mailto:whitevans.eth@gmail.com">
+          Contact Me
+        </a>
+      </nav>
+    </header>
+
+    <div class="cs-page">
+      <div class="cs-page__layout">
+
+        <aside class="cs-toc" aria-label="Table of contents">
+          <p class="cs-toc__label">On this page</p>
+          <ol class="cs-toc__list">
+            <li><a class="cs-toc__link is-active" href="#story">The Problem</a></li>
+            <li><a class="cs-toc__link" href="#solution">The Solution</a></li>
+            <li><a class="cs-toc__link" href="#opportunity">The Gap</a></li>
+            <li><a class="cs-toc__link" href="#research">Research</a></li>
+            <li><a class="cs-toc__link" href="#process">Iteration</a></li>
+            <li><a class="cs-toc__link" href="#reflection">Reflection</a></li>
+          </ol>
+        </aside>
+
+        <main class="cs-main" id="main-content">
+          <article class="cs-article">
+
+            <!-- Hero -->
+            <header class="cs-hero" id="top">
+              <div class="cs-reveal">
+                <a class="cs-back-link" href="../index.html">← Selected Work</a>
+              </div>
+
+              <div class="cs-reveal" style="transition-delay: 80ms">
+                <p class="cs-hero__impact">Helping students feel connected beyond the classroom.</p>
+              </div>
+
+              <div class="cs-reveal" style="transition-delay: 140ms">
+                <h1 class="cs-hero__title">Minder</h1>
+              </div>
+
+              <div class="cs-reveal" style="transition-delay: 200ms">
+                <dl class="cs-hero__meta">
+                  <div class="cs-hero__meta-item">
+                    <dt>Role</dt>
+                    <dd>UX Designer — research, wireframes, prototyping, usability testing</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Timeline</dt>
+                    <dd>September 2024 – March 2025</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Team</dt>
+                    <dd>Sehrish Daud, Jack Strickland, Siheng Li</dd>
+                  </div>
+                  <div class="cs-hero__meta-item">
+                    <dt>Context</dt>
+                    <dd>HCDE 302 &amp; 303 · Figma</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="cs-hero__media-wrap cs-reveal" style="transition-delay: 280ms">
+                <figure class="cs-hero__media">
+                  <img
+                    class="cs-hero__image"
+                    src="../assets/images/Minder/Minder-Hero.png"
+                    alt="Minder app on iPhone — home screen showing study groups for STEM courses at UW"
+                    loading="eager"
+                  />
+                </figure>
+              </div>
+            </header>
+
+            <!-- Story -->
+            <section class="cs-section cs-section--text" id="story" aria-labelledby="story-heading">
+              <p class="cs-label cs-reveal">The Problem</p>
+              <h2 class="visually-hidden" id="story-heading">The Problem</h2>
+
+              <blockquote class="cs-quote cs-reveal">
+                <p>"I don't want to walk all the way to Odegaard library just to find out no one else showed up."</p>
+                <cite>UW mechanical engineering student</cite>
+              </blockquote>
+
+              <p class="cs-body cs-reveal" style="transition-delay: 80ms">
+                UW STEM classes are full of people who could study together — but large lectures, intimidating social dynamics, and scattered tools like Slack and GroupMe make connection feel risky. Students weren't avoiding collaboration. They were avoiding the uncertainty of showing up alone.
+              </p>
+            </section>
+
+            <!-- Solution -->
+            <section class="cs-section cs-section--visual cs-section--solution" id="solution" aria-labelledby="solution-heading">
+              <p class="cs-label cs-reveal">Minder</p>
+              <h2 class="visually-hidden" id="solution-heading">Minder</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                A mobile app that helps students find study partners by course, set a clear session goal, and commit only when the plan feels worth the trip.
+              </p>
+
+              <div class="cs-embed cs-embed--feature cs-reveal" style="transition-delay: 60ms">
+                <div class="cs-embed__frame">
+                  <iframe
+                    src="https://www.youtube.com/embed/FGIY-WFRmFE?start=1"
+                    title="Minder hi-fi Figma prototype walkthrough"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <p class="cs-figure__caption">Hi-fi prototype walkthrough — from sign-in to joining a study group.</p>
+              </div>
+
+              <figure class="cs-figure cs-figure--full cs-reveal" style="transition-delay: 80ms">
+                <img
+                  class="cs-figure__image"
+                  src="../assets/images/Minder/hifi-group1.png"
+                  alt="Minder onboarding and home screens — Canvas-linked courses and study group discovery"
+                  loading="lazy"
+                />
+                <figcaption class="cs-figure__caption">Home pulls in Canvas courses; one tap leads to groups for that class.</figcaption>
+              </figure>
+
+              <div class="cs-highlights">
+                <p class="cs-highlights-label cs-reveal">What it does</p>
+
+                <div class="cs-row cs-reveal">
+                  <div class="cs-row__content">
+                    <h3 class="cs-row__heading">Match by class, not cold outreach</h3>
+                    <p class="cs-body">
+                      Browse small groups tied to your actual courses — filtered by availability and study environment — instead of messaging strangers on Slack or approaching people after lecture.
+                    </p>
+                  </div>
+                  <figure class="cs-row__media">
+                    <img
+                      class="cs-row__image"
+                      src="../assets/images/Minder/hifi-group2.png"
+                      alt="Minder group details, member profiles, and calendar view"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Profile, home, and calendar — the three core surfaces.</figcaption>
+                  </figure>
+                </div>
+
+                <div class="cs-row cs-row--reverse cs-reveal">
+                  <div class="cs-row__content">
+                    <h3 class="cs-row__heading">Know the goal before you go</h3>
+                    <p class="cs-body">
+                      Every session states its purpose — homework help, exam prep, concept review — and shows who is coming. The calendar marks meeting times so accountability is visible, not assumed.
+                    </p>
+                  </div>
+                  <figure class="cs-row__media">
+                    <img
+                      class="cs-row__image"
+                      src="../assets/images/Minder/Screenshot 2025-09-22 at 4.53.33 PM.png"
+                      alt="Minder session screen with study goal, time, and confirmed attendees"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Session details before anyone leaves their dorm.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <!-- Opportunity -->
+            <section class="cs-section" id="opportunity" aria-labelledby="opportunity-heading">
+              <p class="cs-label cs-reveal">The Gap</p>
+
+              <h2 class="cs-section__heading cs-reveal" id="opportunity-heading">
+                Students wanted connection. The tools weren't built for it.
+              </h2>
+
+              <p class="cs-body cs-reveal" style="transition-delay: 80ms">
+                Discord and GroupMe handle chat. Canvas holds coursework. Neither helps a student find two peers, agree on a goal, and show up at Odegaard on Tuesday. After competitive analysis, our focus narrowed: match people by shared context, then remove every reason to bail.
+              </p>
+
+              <p class="cs-insight cs-reveal" style="transition-delay: 160ms">
+                How might we help STEM undergraduates form study groups that feel small, purposeful, and worth showing up for?
+              </p>
+            </section>
+
+            <!-- Research -->
+            <section class="cs-section" id="research" aria-labelledby="research-heading">
+              <p class="cs-label cs-reveal">Research</p>
+              <h2 class="visually-hidden" id="research-heading">Research</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Three interviews with UW STEM undergraduates — focused on where they study, how groups form today, and why past attempts failed.
+              </p>
+
+              <ul class="cs-insight-list cs-reveal">
+                <li class="cs-insight-list__item">
+                  <p class="cs-insight-list__title">Small groups work</p>
+                  <p class="cs-body">2–4 peers, not large circles. Accountability drops when groups feel like another lecture.</p>
+                </li>
+                <li class="cs-insight-list__item">
+                  <p class="cs-insight-list__title">Environment varies</p>
+                  <p class="cs-body">Silent libraries, cafés, dorm rooms — one default setting fails half of students.</p>
+                </li>
+                <li class="cs-insight-list__item">
+                  <p class="cs-insight-list__title">Goals must be explicit</p>
+                  <p class="cs-body">Groups without a defined purpose — homework vs. exam prep — fall apart quickly.</p>
+                </li>
+                <li class="cs-insight-list__item">
+                  <p class="cs-insight-list__title">Schedules rarely align</p>
+                  <p class="cs-body">Classes, work, and clubs make overlap the hardest part — not finding willing partners.</p>
+                </li>
+              </ul>
+
+              <blockquote class="cs-quote cs-quote--inline cs-reveal">
+                <p>We didn't really have a goal. We just said we'd meet up and then nobody knew what to work on.</p>
+                <cite>Biology major, UW</cite>
+              </blockquote>
+
+              <figure class="cs-figure cs-figure--full cs-reveal">
+                <img
+                  class="cs-figure__image"
+                  src="../assets/images/Minder/minder-low-fi.png"
+                  alt="Low-fidelity paper sketches of the study group journey"
+                  loading="lazy"
+                />
+                <figcaption class="cs-figure__caption">Lo-fi sketches — mapping where students drop off between "I need help" and "we're meeting."</figcaption>
+              </figure>
+            </section>
+
+            <!-- Design Process -->
+            <section class="cs-section" id="process" aria-labelledby="process-heading">
+              <p class="cs-label cs-reveal">Iteration</p>
+              <h2 class="visually-hidden" id="process-heading">Iteration</h2>
+
+              <p class="cs-body cs-section__intro cs-reveal">
+                Twenty weeks: competitive analysis → lo-fi → mid-fi → hi-fi, with two rounds of usability testing between each jump.
+              </p>
+
+              <div class="cs-steps">
+
+                <article class="cs-step cs-reveal">
+                  <p class="cs-step__label">Round 1 · Mid-fi</p>
+                  <h3 class="cs-step__heading">Test the flow, fix the confusion</h3>
+                  <p class="cs-body">
+                    Users liked structured matching over random outreach — but the home screen lost them. They couldn't find the path from courses to groups.
+                  </p>
+                  <ul class="cs-step__changes">
+                    <li class="cs-body">Clearer home layout and labels — course → find groups</li>
+                    <li class="cs-body">Filters for study style, experience level, and availability</li>
+                    <li class="cs-body">Onboarding guidance so first-time users know where to start</li>
+                  </ul>
+                  <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Minder/minder-mid-fi.png"
+                      alt="Mid-fidelity Figma screens — revised home flow and group discovery"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Mid-fi — home, find groups, and calendar flows after round one.</figcaption>
+                  </figure>
+                </article>
+
+                <article class="cs-step cs-reveal">
+                  <p class="cs-step__label">Round 2 · Hi-fi</p>
+                  <h3 class="cs-step__heading">Polish what testing confirmed</h3>
+                  <p class="cs-body">
+                    Ease-of-use scores were strong and users said they'd return — but match confidence still needed work. We refined onboarding copy, standardized navigation, and added personalization so groups felt intentional, not random.
+                  </p>
+                  <ul class="cs-step__changes">
+                    <li class="cs-body">Step-by-step onboarding with plain-language instructions</li>
+                    <li class="cs-body">Consistent button placement and visual hierarchy</li>
+                    <li class="cs-body">More match fields so schedules and preferences actually align</li>
+                  </ul>
+                  <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
+                    <img
+                      class="cs-figure__image"
+                      src="../assets/images/Minder/hifi-group2.png"
+                      alt="Hi-fidelity Minder screens — final group calendar and session views"
+                      loading="lazy"
+                    />
+                    <figcaption class="cs-figure__caption">Hi-fi — the final screens tested in round two.</figcaption>
+                  </figure>
+                </article>
+
+                <div class="cs-embed cs-reveal">
+                  <div class="cs-embed__frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/AsTiQvnAHuY"
+                      title="Minder product use-case scenario"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                  <p class="cs-figure__caption">Use-case scenario — how Minder fits into a student's week.</p>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Reflection -->
+            <section class="cs-section cs-section--text cs-section--afterword" id="reflection" aria-labelledby="reflection-heading">
+              <p class="cs-label cs-reveal">Reflection</p>
+              <h2 class="visually-hidden" id="reflection-heading">Reflection</h2>
+
+              <div class="cs-reflection-block cs-reveal">
+                <h3 class="cs-subheading">What I learned</h3>
+                <ul class="cs-reflection-list">
+                  <li class="cs-body">Students needed confidence, not features. The hardest design problem was reducing the social risk of showing up — not building another calendar.</li>
+                  <li class="cs-body">Testing caught what interviews couldn't — users said the app was easy, then got lost on the home screen. Watching beats asking.</li>
+                  <li class="cs-body">Industry feedback at our showcase pushed us beyond UI polish. Connecting students by course and schedule raises real privacy and safety questions — something we hadn't fully designed for.</li>
+                </ul>
+              </div>
+
+              <div class="cs-reflection-block cs-reveal" style="transition-delay: 80ms">
+                <h3 class="cs-subheading">What I'd do next</h3>
+                <ul class="cs-reflection-list">
+                  <li class="cs-body">Rework onboarding so study-style preference is central — less choose-your-own-adventure, more guided path into matching.</li>
+                  <li class="cs-body">Design for trust and safety: reporting, visibility controls, and clear boundaries within groups.</li>
+                  <li class="cs-body">Plan for when matching fails — students with no overlapping schedules need a fallback, or the app stops being useful to them.</li>
+                  <li class="cs-body">Expand research across departments, and design for what happens after a session ends — return visits, not just first joins.</li>
+                </ul>
+              </div>
+
+              <p class="cs-body cs-reflection-growth cs-reveal" style="transition-delay: 160ms">
+                Minder shifted how I frame product problems — from "build a study app" to "design for the moment someone almost reaches out, and doesn't."
+              </p>
+
+              <p class="cs-credits cs-reveal" style="transition-delay: 240ms">
+                HCDE 302 &amp; 303 · Team: Jack Strickland, Siheng Li
+              </p>
+            </section>
+
+            <!-- Next Project -->
+            <nav class="cs-next cs-reveal" aria-label="Continue reading">
+              <a class="cs-next__project" href="./GlowTap.html">
+                <span class="cs-next__eyebrow">Continue reading</span>
+                <span class="cs-next__impact">Helping households become more mindful of water.</span>
+                <span class="cs-next__title">Glow Tap</span>
+              </a>
+            </nav>
+
+          </article>
+        </main>
+
+      </div>
+    </div>
+
+    <footer id="footer" class="cs-footer">
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com" aria-label="Email">
+        <img src="../assets/icons/mail.svg" class="footer-icon" alt="" />
+      </a>
+    </footer>
+
+  </body>
+</html>

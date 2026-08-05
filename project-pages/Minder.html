@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="How Minder helps UW STEM students find study partners and build meaningful academic connections — a case study by Sehrish Daud." />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content="Minder — a mobile app that helps UW STEM students find study partners in their classes. Case study by Sehrish Daud." />
     <link rel="icon" href="../assets/images/1311.png" />
     <title>Minder — Sehrish Daud</title>
 
@@ -95,7 +96,7 @@
                 <figure class="cs-hero__media">
                   <img
                     class="cs-hero__image"
-                    src="../assets/images/Minder/Minder-Hero.png"
+                    src="../assets/images/Minder/minder_hero.jpeg"
                     alt="Minder app on iPhone — home screen showing study groups for STEM courses at UW"
                     loading="eager"
                   />
@@ -114,7 +115,7 @@
               </blockquote>
 
               <p class="cs-body cs-reveal" style="transition-delay: 80ms">
-                UW STEM classes are full of people who could study together — but large lectures, intimidating social dynamics, and scattered tools like Slack and GroupMe make connection feel risky. Students weren't avoiding collaboration. They were avoiding the uncertainty of showing up alone.
+                From personal experience and three student interviews, we found that a lot of STEM students want study groups but don't know how to start one, or feel too intimidated to try. Large lecture halls at UW make it harder to meet people in the first place, and the usual workarounds (Slack, GroupMe, asking someone after class) feel random and unreliable.
               </p>
             </section>
 
@@ -124,68 +125,69 @@
               <h2 class="visually-hidden" id="solution-heading">Minder</h2>
 
               <p class="cs-body cs-section__intro cs-reveal">
-                A mobile app that helps students find study partners by course, set a clear session goal, and commit only when the plan feels worth the trip.
+                Minder is a mobile app that lets students find study partners in the same class, filter by schedule and study preferences, and see what a session is for before showing up.
               </p>
 
-              <div class="cs-embed cs-embed--feature cs-reveal" style="transition-delay: 60ms">
+              <div class="cs-embed cs-embed--full cs-reveal" style="transition-delay: 60ms">
                 <div class="cs-embed__frame">
                   <iframe
                     src="https://www.youtube.com/embed/FGIY-WFRmFE?start=1"
                     title="Minder hi-fi Figma prototype walkthrough"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin"
                     loading="lazy"
                   ></iframe>
                 </div>
-                <p class="cs-figure__caption">Hi-fi prototype walkthrough — from sign-in to joining a study group.</p>
+                <p class="cs-figure__caption">Hi-fi prototype walkthrough, from sign-in to joining a group.</p>
               </div>
 
-              <figure class="cs-figure cs-figure--full cs-reveal" style="transition-delay: 80ms">
+              <figure class="cs-figure cs-figure--full cs-figure--contain cs-reveal" style="transition-delay: 80ms">
                 <img
                   class="cs-figure__image"
-                  src="../assets/images/Minder/hifi-group1.png"
-                  alt="Minder onboarding and home screens — Canvas-linked courses and study group discovery"
+                  src="../assets/images/Minder/hifi_wireframes.png"
+                  alt="Minder hi-fi wireframes — onboarding, home, group matching, join confirmation, and profile screens"
                   loading="lazy"
                 />
-                <figcaption class="cs-figure__caption">Home pulls in Canvas courses; one tap leads to groups for that class.</figcaption>
+                <figcaption class="cs-figure__caption">Hi-fi flow — profile setup, finding groups, matching, and joining.</figcaption>
               </figure>
 
               <div class="cs-highlights">
                 <p class="cs-highlights-label cs-reveal">What it does</p>
 
-                <div class="cs-row cs-reveal">
+                <div class="cs-row cs-row--contain cs-row--device cs-reveal">
                   <div class="cs-row__content">
-                    <h3 class="cs-row__heading">Match by class, not cold outreach</h3>
+                    <h3 class="cs-row__heading">Study preferences for better matches</h3>
                     <p class="cs-body">
-                      Browse small groups tied to your actual courses — filtered by availability and study environment — instead of messaging strangers on Slack or approaching people after lecture.
+                      When setting up their profile, students add study preferences — environment, noise level, and how they like to work (group discussion, silent sessions, exam review, etc.). This gives Minder more to match on, so groups aren't just in the same class but actually compatible.
                     </p>
                   </div>
                   <figure class="cs-row__media">
                     <img
                       class="cs-row__image"
-                      src="../assets/images/Minder/hifi-group2.png"
-                      alt="Minder group details, member profiles, and calendar view"
+                      src="../assets/images/Minder/feature_1.png"
+                      alt="Minder study style screen — environment, noise level, and study interaction preferences"
                       loading="lazy"
                     />
-                    <figcaption class="cs-figure__caption">Profile, home, and calendar — the three core surfaces.</figcaption>
+                    <figcaption class="cs-figure__caption">Study style setup — environment, noise, and how you like to work.</figcaption>
                   </figure>
                 </div>
 
-                <div class="cs-row cs-row--reverse cs-reveal">
+                <div class="cs-row cs-row--reverse cs-row--contain cs-row--device cs-reveal">
                   <div class="cs-row__content">
-                    <h3 class="cs-row__heading">Know the goal before you go</h3>
+                    <h3 class="cs-row__heading">A calendar for your study groups</h3>
                     <p class="cs-body">
-                      Every session states its purpose — homework help, exam prep, concept review — and shows who is coming. The calendar marks meeting times so accountability is visible, not assumed.
+                      The calendar shows assignments and quizzes alongside the days your joined or created study groups are meeting. Color-coded markers make it easy to see what's coming up — so you're not digging through Slack to remember when your group meets next.
                     </p>
                   </div>
                   <figure class="cs-row__media">
                     <img
                       class="cs-row__image"
-                      src="../assets/images/Minder/Screenshot 2025-09-22 at 4.53.33 PM.png"
-                      alt="Minder session screen with study goal, time, and confirmed attendees"
+                      src="../assets/images/Minder/feature_2.png"
+                      alt="Minder calendar view — assignments, quizzes, and study group meetings marked by date"
                       loading="lazy"
                     />
-                    <figcaption class="cs-figure__caption">Session details before anyone leaves their dorm.</figcaption>
+                    <figcaption class="cs-figure__caption">Calendar view — assignments, quizzes, and group meetings in one place.</figcaption>
                   </figure>
                 </div>
               </div>
@@ -196,15 +198,15 @@
               <p class="cs-label cs-reveal">The Gap</p>
 
               <h2 class="cs-section__heading cs-reveal" id="opportunity-heading">
-                Students wanted connection. The tools weren't built for it.
+                Existing tools weren't built for forming study groups
               </h2>
 
               <p class="cs-body cs-reveal" style="transition-delay: 80ms">
-                Discord and GroupMe handle chat. Canvas holds coursework. Neither helps a student find two peers, agree on a goal, and show up at Odegaard on Tuesday. After competitive analysis, our focus narrowed: match people by shared context, then remove every reason to bail.
+                Discord and GroupMe work fine for chat. Canvas holds coursework. Neither really helps you find two other people in your class, agree on what you're studying, and actually meet up. After a competitive analysis, we focused on matching by shared classes and cutting down the reasons people bail last minute.
               </p>
 
               <p class="cs-insight cs-reveal" style="transition-delay: 160ms">
-                How might we help STEM undergraduates form study groups that feel small, purposeful, and worth showing up for?
+                How might we help STEM undergraduates form study groups that are small, have a clear purpose, and feel worth showing up for?
               </p>
             </section>
 
@@ -214,25 +216,25 @@
               <h2 class="visually-hidden" id="research-heading">Research</h2>
 
               <p class="cs-body cs-section__intro cs-reveal">
-                Three interviews with UW STEM undergraduates — focused on where they study, how groups form today, and why past attempts failed.
+                We interviewed three undergraduate STEM students about where they study, how they've tried to form groups before, and what got in the way.
               </p>
 
               <ul class="cs-insight-list cs-reveal">
                 <li class="cs-insight-list__item">
-                  <p class="cs-insight-list__title">Small groups work</p>
-                  <p class="cs-body">2–4 peers, not large circles. Accountability drops when groups feel like another lecture.</p>
+                  <p class="cs-insight-list__title">Small groups work best</p>
+                  <p class="cs-body">Most students preferred 2–4 people. Bigger groups made it easy for people to disengage.</p>
                 </li>
                 <li class="cs-insight-list__item">
-                  <p class="cs-insight-list__title">Environment varies</p>
-                  <p class="cs-body">Silent libraries, cafés, dorm rooms — one default setting fails half of students.</p>
+                  <p class="cs-insight-list__title">Study environments differ</p>
+                  <p class="cs-body">Some want silent libraries, others prefer cafés or dorm rooms. One default doesn't work for everyone.</p>
                 </li>
                 <li class="cs-insight-list__item">
-                  <p class="cs-insight-list__title">Goals must be explicit</p>
-                  <p class="cs-body">Groups without a defined purpose — homework vs. exam prep — fall apart quickly.</p>
+                  <p class="cs-insight-list__title">Groups need a clear goal</p>
+                  <p class="cs-body">When nobody defined the purpose — homework vs. exam prep — sessions fell apart fast.</p>
                 </li>
                 <li class="cs-insight-list__item">
-                  <p class="cs-insight-list__title">Schedules rarely align</p>
-                  <p class="cs-body">Classes, work, and clubs make overlap the hardest part — not finding willing partners.</p>
+                  <p class="cs-insight-list__title">Schedules are the hard part</p>
+                  <p class="cs-body">Finding willing partners wasn't always the issue. Overlapping availability was.</p>
                 </li>
               </ul>
 
@@ -248,7 +250,7 @@
                   alt="Low-fidelity paper sketches of the study group journey"
                   loading="lazy"
                 />
-                <figcaption class="cs-figure__caption">Lo-fi sketches — mapping where students drop off between "I need help" and "we're meeting."</figcaption>
+                <figcaption class="cs-figure__caption">Lo-fi wireframes of the study group flow.</figcaption>
               </figure>
             </section>
 
@@ -258,21 +260,21 @@
               <h2 class="visually-hidden" id="process-heading">Iteration</h2>
 
               <p class="cs-body cs-section__intro cs-reveal">
-                Twenty weeks: competitive analysis → lo-fi → mid-fi → hi-fi, with two rounds of usability testing between each jump.
+                For the last 10 weeks we went from lo-fi to hi-fi, with two rounds of usability testing in between.
               </p>
 
               <div class="cs-steps">
 
                 <article class="cs-step cs-reveal">
                   <p class="cs-step__label">Round 1 · Mid-fi</p>
-                  <h3 class="cs-step__heading">Test the flow, fix the confusion</h3>
+                  <h3 class="cs-step__heading">Fixing the home screen</h3>
                   <p class="cs-body">
-                    Users liked structured matching over random outreach — but the home screen lost them. They couldn't find the path from courses to groups.
+                    People liked structured matching over cold outreach, but several got lost on the home screen — they couldn't figure out how to get from their courses to available groups.
                   </p>
                   <ul class="cs-step__changes">
-                    <li class="cs-body">Clearer home layout and labels — course → find groups</li>
-                    <li class="cs-body">Filters for study style, experience level, and availability</li>
-                    <li class="cs-body">Onboarding guidance so first-time users know where to start</li>
+                    <li class="cs-body">Simplified home layout: course → find groups</li>
+                    <li class="cs-body">Added filters for study style, experience level, and availability</li>
+                    <li class="cs-body">Added onboarding so first-time users know where to start</li>
                   </ul>
                   <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
                     <img
@@ -281,20 +283,20 @@
                       alt="Mid-fidelity Figma screens — revised home flow and group discovery"
                       loading="lazy"
                     />
-                    <figcaption class="cs-figure__caption">Mid-fi — home, find groups, and calendar flows after round one.</figcaption>
+                    <figcaption class="cs-figure__caption">Mid-fi screens after round one — home, find groups, and calendar.</figcaption>
                   </figure>
                 </article>
 
                 <article class="cs-step cs-reveal">
                   <p class="cs-step__label">Round 2 · Hi-fi</p>
-                  <h3 class="cs-step__heading">Polish what testing confirmed</h3>
+                  <h3 class="cs-step__heading">Hi-fi refinements</h3>
                   <p class="cs-body">
-                    Ease-of-use scores were strong and users said they'd return — but match confidence still needed work. We refined onboarding copy, standardized navigation, and added personalization so groups felt intentional, not random.
+                    Usability scores were decent and people said they'd use it again, but some still weren't confident in their matches. We cleaned up onboarding copy, made navigation more consistent, and added more fields so schedules and preferences could actually align.
                   </p>
                   <ul class="cs-step__changes">
-                    <li class="cs-body">Step-by-step onboarding with plain-language instructions</li>
-                    <li class="cs-body">Consistent button placement and visual hierarchy</li>
-                    <li class="cs-body">More match fields so schedules and preferences actually align</li>
+                    <li class="cs-body">Step-by-step onboarding with clearer instructions</li>
+                    <li class="cs-body">More consistent button placement and navigation</li>
+                    <li class="cs-body">More match fields for schedules and study preferences</li>
                   </ul>
                   <figure class="cs-figure cs-figure--full cs-reveal" style="margin-top: var(--space-4)">
                     <img
@@ -303,21 +305,22 @@
                       alt="Hi-fidelity Minder screens — final group calendar and session views"
                       loading="lazy"
                     />
-                    <figcaption class="cs-figure__caption">Hi-fi — the final screens tested in round two.</figcaption>
+                    <figcaption class="cs-figure__caption">Final hi-fi screens tested in round two.</figcaption>
                   </figure>
                 </article>
 
-                <div class="cs-embed cs-reveal">
+                <div class="cs-embed cs-embed--full cs-reveal">
                   <div class="cs-embed__frame">
                     <iframe
                       src="https://www.youtube.com/embed/AsTiQvnAHuY"
                       title="Minder product use-case scenario"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"
                       loading="lazy"
                     ></iframe>
                   </div>
-                  <p class="cs-figure__caption">Use-case scenario — how Minder fits into a student's week.</p>
+                  <p class="cs-figure__caption">Use-case video — how a student might use Minder during a typical week.</p>
                 </div>
 
               </div>
@@ -331,24 +334,24 @@
               <div class="cs-reflection-block cs-reveal">
                 <h3 class="cs-subheading">What I learned</h3>
                 <ul class="cs-reflection-list">
-                  <li class="cs-body">Students needed confidence, not features. The hardest design problem was reducing the social risk of showing up — not building another calendar.</li>
-                  <li class="cs-body">Testing caught what interviews couldn't — users said the app was easy, then got lost on the home screen. Watching beats asking.</li>
-                  <li class="cs-body">Industry feedback at our showcase pushed us beyond UI polish. Connecting students by course and schedule raises real privacy and safety questions — something we hadn't fully designed for.</li>
+                  <li class="cs-body">The main issue wasn't missing features — it was that students didn't want to show up to a study session alone or unprepared. That's what we needed to design around.</li>
+                  <li class="cs-body">In testing, people would say the app was easy to use and then get stuck on the home screen. Watching them use it mattered more than what they told us.</li>
+                  <li class="cs-body">At our end-of-year showcase, industry designers asked about privacy and safety — stalking, harassment — which we hadn't fully thought through when connecting students by course and schedule.</li>
                 </ul>
               </div>
 
               <div class="cs-reflection-block cs-reveal" style="transition-delay: 80ms">
                 <h3 class="cs-subheading">What I'd do next</h3>
                 <ul class="cs-reflection-list">
-                  <li class="cs-body">Rework onboarding so study-style preference is central — less choose-your-own-adventure, more guided path into matching.</li>
-                  <li class="cs-body">Design for trust and safety: reporting, visibility controls, and clear boundaries within groups.</li>
-                  <li class="cs-body">Plan for when matching fails — students with no overlapping schedules need a fallback, or the app stops being useful to them.</li>
-                  <li class="cs-body">Expand research across departments, and design for what happens after a session ends — return visits, not just first joins.</li>
+                  <li class="cs-body">Rework onboarding so study style preference is clearer upfront, instead of feeling like a choose-your-own-adventure.</li>
+                  <li class="cs-body">Add trust and safety features: reporting, visibility controls, and boundaries within groups.</li>
+                  <li class="cs-body">Figure out what happens when schedules don't overlap — without a fallback, the app isn't useful to those students.</li>
+                  <li class="cs-body">Talk to students in more departments, and think about what happens after the first session — not just getting people to join once.</li>
                 </ul>
               </div>
 
               <p class="cs-body cs-reflection-growth cs-reveal" style="transition-delay: 160ms">
-                Minder shifted how I frame product problems — from "build a study app" to "design for the moment someone almost reaches out, and doesn't."
+                Minder changed how I think about this problem. It wasn't really "build a study app" — it was about the moment someone considers reaching out for help and decides not to.
               </p>
 
               <p class="cs-credits cs-reveal" style="transition-delay: 240ms">

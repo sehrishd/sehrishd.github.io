@@ -443,6 +443,44 @@ html.js .cs-reveal.is-visible {
   object-fit: cover;
 }
 
+/* UI mockups & wireframes — show the full image, no crop */
+.cs-figure--contain .cs-figure__image {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.cs-row--contain .cs-row__media {
+  overflow: visible;
+}
+
+.cs-row--contain .cs-row__image {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Single-device mockups — full image, constrained width */
+.cs-row--device {
+  align-items: center;
+}
+
+.cs-row--device .cs-row__media {
+  max-width: 15rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .cs-row--device:not(.cs-row--reverse) .cs-row__media {
+    margin-inline: auto 0;
+  }
+
+  .cs-row--device.cs-row--reverse .cs-row__media {
+    margin-inline: 0 auto;
+  }
+}
+
 .cs-figure__caption {
   margin: var(--space-2) 0 0;
   color: var(--color-text-tertiary);
@@ -539,6 +577,11 @@ html.js .cs-reveal.is-visible {
 }
 
 .cs-embed--feature {
+  margin-block: var(--space-2) var(--space-4);
+}
+
+.cs-embed--full {
+  max-width: 100%;
   margin-block: var(--space-2) var(--space-4);
 }
 
@@ -647,6 +690,46 @@ html.js .cs-reveal.is-visible {
 
 .cs-figure-stack .cs-step__label {
   margin-bottom: calc(-1 * var(--space-1));
+}
+
+/* ——— Image placeholders ——— */
+
+.cs-placeholder__frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--image-radius);
+  background-color: var(--color-bg-elevated);
+}
+
+.cs-figure--half .cs-placeholder__frame,
+.cs-row__media .cs-placeholder__frame {
+  aspect-ratio: 4 / 3;
+}
+
+.cs-placeholder__label {
+  color: var(--color-text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--text-micro);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.cs-placeholder__hint {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  line-height: var(--leading-normal);
+  text-align: center;
+  max-width: 22rem;
+  padding-inline: var(--space-3);
 }
 
 /* ——— Reflection ——— */

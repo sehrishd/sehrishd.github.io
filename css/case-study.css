@@ -368,6 +368,24 @@ html.js .cs-reveal.is-visible {
   margin-top: var(--space-3);
 }
 
+.cs-hero__caption {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  line-height: var(--leading-normal);
+}
+
+.cs-hero__caption a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: var(--transition-color);
+}
+
+.cs-hero__caption a:hover {
+  color: var(--color-link-hover);
+}
+
 .cs-hero__media {
   margin: 0;
   overflow: hidden;
@@ -558,13 +576,16 @@ html.js .cs-reveal.is-visible {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+  max-width: 100%;
 }
 
 .cs-video {
   display: block;
   width: 100%;
+  height: auto;
   border-radius: var(--image-radius);
   filter: saturate(var(--image-saturate));
+  background-color: var(--color-text-primary);
 }
 
 /* ——— Embedded media (YouTube, etc.) ——— */
@@ -640,6 +661,60 @@ html.js .cs-reveal.is-visible {
 
 .cs-insight-list__item .cs-body {
   margin: 0;
+}
+
+/* ——— Award banner ——— */
+
+.cs-award {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-block: var(--space-2) var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  max-width: var(--container-text);
+  border-left: 2px solid var(--color-accent);
+  border-radius: 0 var(--image-radius) var(--image-radius) 0;
+  background-color: var(--color-bg-elevated);
+}
+
+.cs-award--hero {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  max-width: fit-content;
+  border-left-width: 2px;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-normal);
+}
+
+.cs-award__label {
+  margin: 0;
+  color: var(--color-accent-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-micro);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.cs-award__title {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+}
+
+.cs-award__detail {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  line-height: var(--leading-normal);
 }
 
 /* ——— Process steps ——— */

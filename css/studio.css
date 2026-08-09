@@ -2,7 +2,8 @@
  * Studio — editorial creative archive
  */
 
-.navbar nav {
+.navbar nav,
+.nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,6 +130,91 @@ html.js .studio-piece.is-visible {
 .studio-piece--portrait .studio-piece__image {
   aspect-ratio: 4 / 5;
   max-height: 42rem;
+}
+
+.studio-piece--contain .studio-piece__media {
+  overflow: visible;
+  background-color: var(--color-bg-elevated);
+  border-radius: var(--image-radius);
+}
+
+.studio-piece--contain .studio-piece__image {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.studio-piece--contain .studio-piece__link:hover .studio-piece__image,
+.studio-piece--contain .studio-piece__link:focus-visible .studio-piece__image {
+  transform: none;
+}
+
+/* ——— Feature layout (content first + detail grid) ——— */
+
+.studio-piece--feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.studio-piece--feature .studio-piece__content {
+  max-width: var(--container-content);
+}
+
+.studio-piece__media--contain {
+  overflow: visible;
+  margin: 0;
+  background-color: var(--color-bg-elevated);
+  border-radius: var(--image-radius);
+}
+
+.studio-piece__media--contain .studio-piece__image {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.studio-piece__media--compact {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.studio-piece__media--compact .studio-piece__image {
+  width: auto;
+  max-width: min(22rem, 100%);
+  max-height: 24rem;
+}
+
+.studio-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.studio-detail-grid__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.studio-detail-grid__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--image-radius);
+  filter: saturate(var(--image-saturate));
+}
+
+.studio-detail-grid__caption {
+  margin: 0;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  line-height: var(--leading-normal);
 }
 
 .studio-piece__link:hover .studio-piece__image,
@@ -336,6 +422,10 @@ html.js .studio-piece.is-visible {
   .studio-gallery__item:nth-child(2),
   .studio-gallery__item:nth-child(3) {
     grid-column: 1 / -1;
+  }
+
+  .studio-detail-grid {
+    grid-template-columns: 1fr;
   }
 }
 

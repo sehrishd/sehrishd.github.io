@@ -128,9 +128,16 @@ a.icon-link:hover {
 .nav-title-link {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-2);
   color: var(--color-text-primary);
   text-decoration: none;
+}
+
+.nav-mark {
+  width: 1.625rem;
+  height: 1.625rem;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .nav-title-link:hover {
@@ -144,6 +151,50 @@ a.icon-link:hover {
 
 .nav-title-link .button {
   margin-left: auto;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: var(--space-3);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: var(--color-text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: var(--border-width) solid transparent;
+  transition: var(--transition-color), var(--transition-border);
+}
+
+.nav-link:hover,
+.nav-link--active {
+  color: var(--color-link);
+  border-bottom-color: var(--color-link);
+  text-decoration: none;
+}
+
+.nav-link--cta {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-border-strong);
+}
+
+.nav-link--cta:hover {
+  color: var(--color-link);
+  border-bottom-color: var(--color-link);
 }
 
 /* ——— Footer ——— */
@@ -283,6 +334,15 @@ a.icon-link:hover {
 
   .nav-title-link {
     gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .nav-inner {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    gap: var(--space-3);
     flex-wrap: wrap;
   }
 

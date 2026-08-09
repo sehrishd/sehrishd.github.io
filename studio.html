@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="data:," />
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Studio — visual explorations, creative concepts, and experiments by Sehrish Daud." />
     <title>Studio — Sehrish Daud</title>
@@ -24,13 +24,16 @@
   <body>
 
     <header class="navbar">
-      <nav class="cs-nav__inner" aria-label="Primary">
+      <nav class="nav-inner" aria-label="Primary">
         <a class="nav-title-link" href="./index.html">
+          <img class="nav-mark" src="./assets/icons/favicon.png" alt="" width="26" height="26" />
           <span class="nav-title">Sehrish Daud</span>
         </a>
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
-          <span class="button-text">Contact Me</span>
-        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="./about.html">About Me</a>
+          <a class="nav-link" href="./assets/Sehrish_Daud_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="nav-link nav-link--cta" href="mailto:daudsehrish@gmail.com">Contact Me</a>
+        </div>
       </nav>
     </header>
 
@@ -40,118 +43,131 @@
         <a class="studio-back" href="./index.html">← Selected Work</a>
         <h1 class="studio-hero__title" id="studio-heading">Studio</h1>
         <p class="studio-hero__lead">
-          A collection of visual explorations, creative concepts, and experiments beyond product design.
+          A collection of visual explorations, creative concepts, and experiments.
         </p>
       </header>
 
       <div class="studio-archive">
 
-        <!-- Starry Night Food Festival -->
-        <article class="studio-piece" id="starry-night">
-          <a class="studio-piece__link" href="#" aria-label="Starry Night Food Festival — view project">
-            <figure class="studio-piece__media">
-              <img
-                class="studio-piece__image"
-                src="./assets/images/FRESH/FRESH main pic portfolio.png"
-                alt="Starry Night Food Festival — conceptual event branding with deep blue tones and expressive typography"
-                loading="eager"
-              />
-            </figure>
-            <div class="studio-piece__content">
-              <div class="studio-piece__header">
-                <p class="studio-piece__impact">Turning a night market into a constellation of flavor.</p>
-                <h2 class="studio-piece__title">Starry Night Food Festival</h2>
-              </div>
-              <p class="studio-piece__description">
-                Conceptual event branding and visual identity for an evening food festival — exploring how atmosphere, typography, and color can make a temporary gathering feel luminous and memorable.
-              </p>
-              <div class="studio-piece__footer">
-                <ul class="studio-piece__tags" aria-label="Categories">
-                  <li class="studio-tag">Event branding</li>
-                  <li class="studio-tag">Visual identity</li>
-                  <li class="studio-tag">Concept</li>
-                </ul>
-                <span class="studio-piece__cta">Explore</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <!-- Stride Seattle -->
-        <article class="studio-piece studio-piece--portrait" id="stride-seattle">
-          <a class="studio-piece__link" href="#" aria-label="Stride Seattle — view project">
-            <figure class="studio-piece__media">
-              <img
-                class="studio-piece__image"
-                src="./assets/images/studio/stride-seattle.jpg"
-                alt="Stride Seattle — community walking club brand identity with warm, approachable visual language"
-                loading="lazy"
-              />
-            </figure>
-            <div class="studio-piece__content">
-              <div class="studio-piece__header">
-                <p class="studio-piece__impact">Building belonging, one neighborhood walk at a time.</p>
-                <h2 class="studio-piece__title">Stride Seattle</h2>
-              </div>
-              <p class="studio-piece__description">
-                Community brand identity and walking club concept — a visual system designed to feel welcoming, local, and unhurried, inviting people to explore the city together on foot.
-              </p>
-              <div class="studio-piece__footer">
-                <ul class="studio-piece__tags" aria-label="Categories">
-                  <li class="studio-tag">Brand identity</li>
-                  <li class="studio-tag">Community</li>
-                  <li class="studio-tag">Concept</li>
-                </ul>
-                <span class="studio-piece__cta">Explore</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <!-- Digital Sketches -->
-        <article class="studio-piece studio-piece--gallery" id="digital-sketches">
+        <!-- FRESH -->
+        <article class="studio-piece studio-piece--feature" id="fresh">
           <div class="studio-piece__content">
             <div class="studio-piece__header">
-              <p class="studio-piece__impact">Where ideas land before they become products.</p>
-              <h2 class="studio-piece__title">Digital Sketches</h2>
+              <p class="studio-piece__impact">FRESH</p>
+              <h2 class="studio-piece__title">Starry Night Food Festival</h2>
             </div>
             <p class="studio-piece__description">
-              An ongoing archive of illustrations, paintings, and visual experiments — a sketchbook in public, where curiosity leads and polish follows later.
+              Event branding and visual identity for an evening food festival. I explored atmosphere, typography, and color for an imaginary food festival.
             </p>
             <ul class="studio-piece__tags" aria-label="Categories">
-              <li class="studio-tag">Illustration</li>
-              <li class="studio-tag">Digital art</li>
-              <li class="studio-tag">Experimentation</li>
+              <li class="studio-tag">Event branding</li>
+              <li class="studio-tag">Visual identity</li>
+              <li class="studio-tag">Concept</li>
             </ul>
           </div>
 
-          <div class="studio-gallery">
-            <figure class="studio-gallery__item">
+          <figure class="studio-piece__media studio-piece__media--contain">
+            <img
+              class="studio-piece__image"
+              src="./assets/images/FRESH/hifi_wireframes.png"
+              alt="FRESH — Starry Night Food Festival hi-fi wireframes and app screens"
+              loading="eager"
+            />
+          </figure>
+
+          <div class="studio-detail-grid">
+            <figure class="studio-detail-grid__item">
               <img
-                class="studio-gallery__image"
-                src="./assets/images/studio/sketches/01.jpg"
-                alt="Digital sketch — painterly illustration study"
+                class="studio-detail-grid__image"
+                src="./assets/images/FRESH/Case Study - Map.png"
+                alt="FRESH festival map — layout and vendor placement for Starry Night Food Festival"
                 loading="lazy"
               />
-              <figcaption class="studio-gallery__caption">Illustration study — form and color without a brief.</figcaption>
+              <figcaption class="studio-detail-grid__caption">Festival map</figcaption>
             </figure>
-            <figure class="studio-gallery__item">
+            <figure class="studio-detail-grid__item">
               <img
-                class="studio-gallery__image"
-                src="./assets/images/studio/sketches/02.jpg"
-                alt="Digital sketch — abstract visual experiment"
+                class="studio-detail-grid__image"
+                src="./assets/images/FRESH/Moodboard.png"
+                alt="FRESH moodboard — visual direction for Starry Night Food Festival"
                 loading="lazy"
               />
-              <figcaption class="studio-gallery__caption">Visual experiment — texture and composition.</figcaption>
+              <figcaption class="studio-detail-grid__caption">Moodboard</figcaption>
             </figure>
-            <figure class="studio-gallery__item">
+            <figure class="studio-detail-grid__item">
               <img
-                class="studio-gallery__image"
-                src="./assets/images/studio/sketches/03.jpg"
-                alt="Digital sketch — atmospheric digital painting"
+                class="studio-detail-grid__image"
+                src="./assets/images/FRESH/Case Study - Colors for portfolio.png"
+                alt="FRESH color palette — brand colors for Starry Night Food Festival"
                 loading="lazy"
               />
-              <figcaption class="studio-gallery__caption">Atmospheric study — light and mood.</figcaption>
+              <figcaption class="studio-detail-grid__caption">Colors</figcaption>
+            </figure>
+            <figure class="studio-detail-grid__item">
+              <img
+                class="studio-detail-grid__image"
+                src="./assets/images/FRESH/Case Study - Typography for portfolio.png"
+                alt="FRESH typography — type system for Starry Night Food Festival"
+                loading="lazy"
+              />
+              <figcaption class="studio-detail-grid__caption">Typography</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Steeply -->
+        <article class="studio-piece studio-piece--feature" id="steeply">
+          <div class="studio-piece__content">
+            <div class="studio-piece__header">
+              <p class="studio-piece__impact">Steeply</p>
+              <h2 class="studio-piece__title">Automated Tea Steeper</h2>
+            </div>
+            <p class="studio-piece__description">
+              An Arduino-powered tea steeper that brews different types of tea. Select green, herbal, or black tea on the IR remote (each triggers a preset steep time), then press play. A servo motor lowers the teabag, waits, lifts it out. A buzzer signals when it's ready.
+            </p>
+            <ul class="studio-piece__tags" aria-label="Categories">
+              <li class="studio-tag">Physical computing</li>
+              <li class="studio-tag">Prototyping</li>
+              <li class="studio-tag">Product design</li>
+            </ul>
+          </div>
+
+          <div class="studio-detail-grid">
+            <figure class="studio-detail-grid__item">
+              <img
+                class="studio-detail-grid__image"
+                src="./assets/images/Steeply/steeply_prototype_final.jpg"
+                alt="Steeply — finished automated tea steeper prototype"
+                loading="lazy"
+              />
+              <figcaption class="studio-detail-grid__caption">Final prototype</figcaption>
+            </figure>
+            <figure class="studio-detail-grid__item">
+              <img
+                class="studio-detail-grid__image"
+                src="./assets/images/Steeply/steeply_schematic.jpg"
+                alt="Steeply schematic — system diagram for the automated tea steeper"
+                loading="lazy"
+              />
+              <figcaption class="studio-detail-grid__caption">Schematic</figcaption>
+            </figure>
+            <figure class="studio-detail-grid__item">
+              <img
+                class="studio-detail-grid__image"
+                src="./assets/images/Steeply/steeply_sketch.jpg"
+                alt="Steeply sketch — early concept drawings for the tea steeper"
+                loading="lazy"
+              />
+              <figcaption class="studio-detail-grid__caption">Sketch</figcaption>
+            </figure>
+            <figure class="studio-detail-grid__item">
+              <img
+                class="studio-detail-grid__image"
+                src="./assets/images/Steeply/steeply_electronics.jpg"
+                alt="Steeply electronics — internal wiring and components"
+                loading="lazy"
+              />
+              <figcaption class="studio-detail-grid__caption">Electronics</figcaption>
             </figure>
           </div>
         </article>
@@ -161,7 +177,7 @@
     </main>
 
     <footer id="footer">
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com" aria-label="Email">
+      <a class="icon-link" href="mailto:daudsehrish@gmail.com" aria-label="Email">
         <img src="./assets/icons/mail.svg" class="footer-icon" alt="" />
       </a>
     </footer>

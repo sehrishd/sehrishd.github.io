@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<link rel="icon" href="data:,">
+		<link rel="icon" href="./assets/icons/favicon.png" type="image/png">
 
     <!-- 
       TODO
@@ -33,16 +33,19 @@
 	</head>
 	<body>
     <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Sehrish Daud</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:daudsehrish@gmail.com">
-          <span class="button-text">Contact Me</span>
+    <header class="navbar">
+      <nav class="nav-inner" aria-label="Primary">
+        <a class="nav-title-link" href="./index.html">
+          <img class="nav-mark" src="./assets/icons/favicon.png" alt="" width="26" height="26" />
+          <span class="nav-title">Sehrish Daud</span>
         </a>
-      </a>
-    </div>
+        <div class="nav-links">
+          <a class="nav-link" href="./about.html">About Me</a>
+          <a class="nav-link" href="./assets/Sehrish_Daud_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="nav-link nav-link--cta" href="mailto:daudsehrish@gmail.com">Contact Me</a>
+        </div>
+      </nav>
+    </header>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -77,7 +80,7 @@
               <div class="project-row__content">
                 <p class="project-row__impact">Helping students feel connected.</p>
                 <p class="project-row__description">
-                  Students weren't avoiding study groups—they were avoiding uncertainty. Minder helps them coordinate study sessions with clarity and confidence.
+                  Students weren't avoiding study groups, they were avoiding uncertainty. Minder helps them coordinate study sessions with clarity and confidence.
                 </p>
                 <div class="project-row__meta">
                   <span class="project-row__name">Minder</span>
@@ -147,32 +150,11 @@
     </div>
 
     <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+    <footer id="footer">
+      <a class="icon-link" href="mailto:daudsehrish@gmail.com" aria-label="Email">
+        <img src="./assets/icons/mail.svg" class="footer-icon" alt="" />
       </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
+    </footer>
 
 	</body>
 </html>

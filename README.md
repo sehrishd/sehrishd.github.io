@@ -12,7 +12,7 @@ Designing technology that makes everyday life more intentional.
 
 This site showcases my selected case studies and creative work. It is built as a calm, editorial experience rather than a generic portfolio template. Case studies are written for clarity and scanability.
 
-**Contact:** [daudsehrish@gmail.com](mailto:whitevans.eth@gmail.com)
+**Contact:** [daudsehrish@gmail.com](mailto:daudsehrish@gmail.com)
 
 ---
 
